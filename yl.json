@@ -27,7 +27,7 @@
             "key": "aowu弹幕",
             "name": "嗷呜🐺弹幕",
             "type": 3,
-            "jar": "https://gh-proxy.org/https://raw.githubusercontent.com/bzr-zd/2/main/lib/aow--dm.png",
+            "jar": "./1.jar",
             "api": "csp_GoConfigAmns",
             "indexs": 1,
             "searchable": 1,
