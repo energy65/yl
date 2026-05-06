@@ -13,7 +13,7 @@
             "changeable": 1,
             "timeout": 60,
             "indexs": 1,
-            "ext": "./json/douban.json"
+            "ext": "./douban.json"
         },
         {
             "key": "csp_Config",
@@ -51,7 +51,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jar/琪琪家.jar"
+            "jar": "./琪琪家.jar"
         },
         {
             "key": "csp_mgtv",
@@ -61,7 +61,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jar/果果家.jar"
+            "jar": "./果果家.jar"
         },
         {
             "key": "csp-youku",
@@ -71,14 +71,14 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jar/库库家.jar"
+            "jar": "./库库家.jar"
         },
         {
             "key": "爱腾讯",
             "name": "👌超清线路4",
             "type": 3,
             "api": "./drpy2.min.js",
-            "ext": "./js/qq.js"
+            "ext": "./qq.js"
         },
         {
             "key": "藤藤",
@@ -108,7 +108,7 @@
 		{  "key": "皮皮虾",
             "name": "🐮4k线路4",
             "type": 3,
-            "api": "./py/皮皮虾.py",
+            "api": "./皮皮虾.py",
             "ext": "http://154.94.224.98:8762"
         },
         {
@@ -209,7 +209,7 @@
             "ext": {
                 "sites": "https://www.leijing.xyz,https://www.leijing1.com,https://leijing.xyz,https://leijing1.com",
                 "proxy": "noproxy",
-                "classes": "./json/leijing.json"
+                "classes": "./leijing.json"
             }
         },
         {
@@ -223,7 +223,7 @@
             "changeable": 1,
             "ext": {
                 "sites": "https://wogg.xxooo.cf",
-                "filters": "./json/wogg.json",
+                "filters": "./wogg.json",
                 "proxy": "noproxy"
             }
         },
@@ -238,7 +238,7 @@
             "timeout": 60,
             "ext": {
                 "sites": "https://woog.nxog.eu.org",
-                "filters": "./json/wogg2.json",
+                "filters": "./wogg2.json",
                 "proxy": "noproxy"
             }
         },
@@ -253,7 +253,7 @@
             "timeout": 60,
             "ext": {
                 "sites": "http://fmao.shop",
-                "filters": "./json/wogg2.json",
+                "filters": "./wogg2.json",
                 "proxy": "noproxy"
             }
         },
@@ -268,7 +268,7 @@
             "timeout": 60,
             "ext": {
                 "sites": "https://sd.sduc.site",
-                "filters": "./json/wogg2.json",
+                "filters": "./wogg2.json",
                 "proxy": "noproxy"
             }
         },
@@ -283,7 +283,7 @@
             "timeout": 60,
             "ext": {
                 "sites": "https://wexwp.cc",
-                "filters": "./json/wogg2.json",
+                "filters": "./wogg2.json",
                 "proxy": "noproxy"
             }
         },
@@ -298,7 +298,7 @@
             "timeout": 60,
             "ext": {
                 "sites": "https://www.muou.site",
-                "filters": "./json/wogg2.json",
+                "filters": "./wogg2.json",
                 "proxy": "noproxy"
             }
         },
@@ -313,7 +313,7 @@
             "timeout": 60,
             "ext": {
                 "sites": "https://mihdr.top",
-                "filters": "./json/wogg2.json",
+                "filters": "./wogg2.json",
                 "proxy": "noproxy"
             }
         },
@@ -328,7 +328,7 @@
             "timeout": 60,
             "ext": {
                 "sites": "https://tv.yydsys.top/",
-                "filters": "./json/wogg2.json",
+                "filters": "./wogg2.json",
                 "proxy": "noproxy"
             }
         },
@@ -358,7 +358,7 @@
             "name": "👌瓜子②|影视",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
-            "ext": "./js/瓜子.js"
+            "ext": "./瓜子.js"
         },
         {
             "key": "柠檬",
@@ -366,7 +366,7 @@
             "type": 3,
             "api": "csp_Nmvod",
             "playerType": 2,
-            "jar": "./jar/柠檬.jar",
+            "jar": "./柠檬.jar",
             "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"
         },
 		  {
@@ -381,7 +381,7 @@
             "changeable": 1,
             "ext": {
               "host": "",
-              "site": "./json/az5.txt",
+              "site": "./az5.txt",
               "version": "3.0.1.9"
             }
         },
@@ -389,7 +389,7 @@
             "key": "csp_SaoHuo",
             "name": "👌骚火|影视",
             "type": 3,
-            "jar": "./jar/骚火🔥.jar",
+            "jar": "./骚火🔥.jar",
             "api": "csp_SaoHuo"
         },
         {
@@ -401,7 +401,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "jar": "./svip.jar",
-            "ext": "./json/狐狸磁力.json"
+            "ext": "./狐狸磁力.json"
         },
         {
             "key": "New6v",
@@ -411,7 +411,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jar/svip.jar",
+            "jar": "./svip.jar",
             "ext": "https://www.xb6v.com"
         },
         {
@@ -749,7 +749,7 @@
             "quickSearch": 1,
             "changeable": 1,
             "ext": {
-                "classes": "./json/duanjucen.json"
+                "classes": "./duanjucen.json"
             },
             "类型": "短剧"
         },
@@ -760,13 +760,13 @@
             "api": "csp_XBPQ",
             "timeout": 60,
             "ext": "./json/七味短剧.json",
-            "jar": "./jar/svip.jar",
+            "jar": "./svip.jar",
             "类型": "短剧"
         },
         {
             "key": "央视大全py",
             "name": "📺央视大全",
-            "api": "./py/央视大全.py",
+            "api": "./央视大全.py",
             "filterable": 1,
             "timeout": 60,
             "quickSearch": 1,
@@ -790,7 +790,7 @@
             "timeout": 60,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
             "searchable": 1,
-            "ext": "./js/兔小贝.js"
+            "ext": "./兔小贝.js"
         },
         {
             "key": "贝乐虎",
@@ -798,20 +798,20 @@
             "type": 3,
             "timeout": 60,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
-            "ext": "./js/贝乐虎.js"
+            "ext": "./贝乐虎.js"
         },
         {
             "key": "戏曲大全",
             "name": "🎭戏曲┃大全",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
-            "ext": "./js/戏曲大全.js"
+            "ext": "./戏曲大全.js"
         },
         {
             "key": "🙈华数",
             "name": "🙈桦树|少儿",
             "type": 3,
-            "api": "./py/桦树.py",
+            "api": "./桦树.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0,
@@ -822,7 +822,7 @@
         {
             "key": "py_yymp3",
             "name": "🎶yymp3|音乐",
-            "api": "./py/YYMP3音乐网.py",
+            "api": "./YYMP3音乐网.py",
             "filterable": 1,
             "timeout": 60,
             "quickSearch": 1,
@@ -832,7 +832,7 @@
         {
             "key": "爱玩音乐",
             "name": "爱玩🎤音乐",
-            "api": "./py/爱玩音乐.py",
+            "api": "./爱玩音乐.py",
             "filterable": 1,
             "quickSearch": 1,
             "searchable": 1,
@@ -845,7 +845,7 @@
             "api": "csp_Bili",
             "playerType": 2,
             "ext": {
-                "json": "./json/bili.json",
+                "json": "./bili.json",
                 "cookie": ""
             },
             "style": {
@@ -860,7 +860,7 @@
             "api": "csp_Bili",
             "playerType": 2,
             "ext": {
-                "json": "./json/biliyy.json",
+                "json": "./biliyy.json",
                 "cookie": ""
             },
             "style": {
@@ -875,7 +875,7 @@
             "api": "csp_Bili",
             "playerType": 2,
             "ext": {
-                "json": "./json/mtv.json",
+                "json": "./mtv.json",
                 "cookie": ""
             },
             "style": {
@@ -890,7 +890,7 @@
             "api": "csp_Bili",
             "playerType": 2,
             "ext": {
-                "json": "./json/bilirt.json",
+                "json": "./bilirt.json",
                 "cookie": ""
             },
             "style": {
@@ -907,7 +907,7 @@
            "quickSearch": 0,
            "filterable": 1,
            "ext": {
-             "json": "./edu/小学课堂.json",
+             "json": "./小学课堂.json",
              "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
            },
            "style": {
@@ -924,7 +924,7 @@
            "quickSearch": 0,
            "filterable": 1,
            "ext": {
-             "json": "./edu/初中课堂.json",
+             "json": "./初中课堂.json",
              "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
            },
            "style": {
@@ -941,7 +941,7 @@
           "quickSearch": 0,
           "filterable": 1,
           "ext": {
-            "json": "./edu/高中课堂.json",
+            "json": "./高中课堂.json",
             "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
           },
           "style": {
@@ -956,7 +956,7 @@
             "api": "csp_Bili",
             "playerType": 2,
             "ext": {
-                "json": "./json/bilims.json",
+                "json": "./bilims.json",
                 "cookie": ""
             },
             "style": {
@@ -1293,6 +1293,13 @@
         }
     ],
     "lives": [
+		   {
+            "name": "源力zb",
+            "type": 0,
+            "url": "./ylzb.txt",
+            "playerType": 2,
+            "timeout": 10
+        },
         {
             "name": "🔯develop202",
             "type": 0,
