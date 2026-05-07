@@ -162,7 +162,7 @@
         },
             {
       "key": "csp_wogg1",
-      "name": "4k扫码｜4K弹幕1",
+      "name": "😄4k扫码｜4K弹幕1",
       "type": 3,
       "changeable": "0",
       "api": "csp_Duopan",
@@ -185,7 +185,7 @@
     },
     {
       "key": "csp_woog2",
-      "name": "4k扫码｜4K弹幕2",
+      "name": "😄4k扫码｜4K弹幕2",
       "type": 3,
       "changeable": "0",
       "api": "csp_Duopan",
@@ -208,7 +208,7 @@
     },
     {
       "key": "夸快夸快",
-      "name": "❤夸快｜4K",
+      "name": "😄夸快｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -225,7 +225,7 @@
     },
 	 {
       "key": "玩偶",
-      "name": "❤玩偶｜4K",
+      "name": "😄玩偶｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -243,7 +243,7 @@
     },
     {
       "key": "蜡笔",
-      "name": "❤蜡笔｜4K",
+      "name": "😄蜡笔｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -266,7 +266,7 @@
     },
     {
       "key": "至臻",
-      "name": "❤至臻｜4K",
+      "name": "😄至臻｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -287,7 +287,7 @@
     },
     {
       "key": "多多",
-      "name": "❤多多｜4K",
+      "name": "😄多多｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -305,7 +305,7 @@
     },
     {
       "key": "木偶",
-      "name": "❤木偶｜4K",
+      "name": "😄木偶｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -324,7 +324,7 @@
     },
     {
       "key": "虎斑",
-      "name": "❤虎斑｜4K",
+      "name": "😄虎斑｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -341,7 +341,7 @@
     },
     {
       "key": "二小",
-      "name": "❤二小｜4K",
+      "name": "😄二小｜4K",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -361,7 +361,7 @@
     },
     {
       "key": "盘搜",
-      "name": "❤盘搜｜搜索",
+      "name": "😄盘搜｜搜索",
       "type": 3,
       "api": "csp_PanSou",
       "searchable": 1,
@@ -371,7 +371,7 @@
     },
     {
       "key": "阿里云盘",
-      "name": "❤我的｜阿离",
+      "name": "😄我的｜阿离",
       "type": 3,
       "api": "csp_PanAli",
       "searchable": 0,
@@ -384,7 +384,7 @@
     },
     {
       "key": "夸克云盘",
-      "name": "❤我的｜夸克",
+      "name": "😄我的｜夸克",
       "type": 3,
       "api": "csp_PanQuark",
       "searchable": 0,
@@ -397,7 +397,7 @@
     },
     {
       "key": "UC云盘",
-      "name": "❤我的｜UC",
+      "name": "😄我的｜UC",
       "type": 3,
       "api": "csp_PanUC",
       "searchable": 0,
@@ -410,7 +410,7 @@
     },
     {
       "key": "百度云盘",
-      "name": "❤我的｜肚盘",
+      "name": "😄我的｜肚盘",
       "type": 3,
       "api": "csp_PanBaidu",
       "searchable": 0,
