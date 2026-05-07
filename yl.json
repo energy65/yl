@@ -24,18 +24,6 @@
             "changeable": 0
         },
         {
-            "key": "aowu弹幕",
-            "name": "嗷呜🐺弹幕",
-            "type": 3,
-            "jar": "./1.jar",
-            "api": "csp_GoConfigAmns",
-            "indexs": 1,
-            "searchable": 1,
-            "filterable": 0,
-            "quickSearch": 1,
-            "changeable": 0
-        },
-        {
             "key": "本地",
             "name": "🐍本地┃文件",
             "type": 3,
@@ -898,6 +886,23 @@
                 "ratio": 1.333
             }
         },
+		{
+           "key": "少儿教育",
+           "name": "少儿｜教育",
+           "type": 3,
+           "api": "csp_Bili",
+           "searchable": 0,
+           "quickSearch": 0,
+           "filterable": 1,
+           "ext": {
+             "json": "./少儿教育.json",
+             "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+           },
+           "style": {
+             "type": "rect",
+             "ratio": 1.597
+           }
+         },
 		 {
            "key": "小学课堂",
            "name": "小学｜课堂",
