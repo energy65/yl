@@ -427,6 +427,7 @@
             "type": 3,
             "api": "csp_Jianpian",
             "searchable": 1,
+			"jar": "./yl.jar"
             "changeable": 1,
             "ext": {
                 "filters": "./json/jianpian.json",
@@ -435,16 +436,8 @@
             }
         },
         {
-            "key": "csp_Guazi",
-            "name": "👌瓜子①┃影视",
-            "type": 3,
-            "api": "csp_Guazi",
-            "searchable": 1,
-            "changeable": 1
-        },
-        {
             "key": "瓜子js",
-            "name": "👌瓜子②|影视",
+            "name": "👌瓜子|影视",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
             "ext": "./瓜子.js"
