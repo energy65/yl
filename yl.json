@@ -427,7 +427,7 @@
             "type": 3,
             "api": "csp_Jianpian",
             "searchable": 1,
-			"jar": "./yl.jar",
+			"jar": "./源力.jar",
             "changeable": 1,
             "ext": {
                 "filters": "./json/jianpian.json",
