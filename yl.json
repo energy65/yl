@@ -15,17 +15,9 @@
             "indexs": 1,
             "ext": "./douban.json"
         },
-        {
-            "key": "csp_Config",
-            "name": "🔎配置┃中心",
-            "type": 3,
-            "api": "csp_Config",
-            "searchable": 0,
-            "changeable": 0
-        },
 		{
       "key": "配置中心",
-      "name": "🔎配置｜中心2",
+      "name": "🔎配置｜中心",
       "type": 3,
       "api": "csp_Config",
       "searchable": 0,
@@ -35,14 +27,6 @@
         "ratio": 1.597
       }
     },
-        {
-            "key": "本地",
-            "name": "🐍本地┃文件",
-            "type": 3,
-            "api": "csp_Local",
-            "searchable": 0,
-            "changeable": 0
-        },
         {
             "key": "csp_iqiyi",
             "name": "👌超清线路1",
