@@ -160,162 +160,267 @@
             "data": "d895288565eb2ea7fcb9caa81e70fa9b13ee921ef90f07182de55a048be4f69da9cbf70f8b5697fc82d0499ccd36f89dc3e85804e9df9b2ade928718016082fc72dd21bb566aeaade2cbf1c7ed0d7047ad136cd3102a1a58c848c316cbcffbc341c48f17e2c5869cfbc9df7e73ea2cb95c8c104cb9d7cee2725543e287ee64b784f988700aa9be055f7ccc6e0a828c7cfe727cfbfe7de8547de6c1367c214a1ed6c8528a2feb05f0c398611c92868d24d63abcdf6d7948f622a782c88f4449d033ede28737a32eb1146ef41f4b783a67a8e9eacf5d9065a794107b73b247d1a44274eea7de64daaa1cce69635aeae613bdf3d2ce07eaa45b5596791b4bf21650a791219ddf8465ef228f29955798e36bc800dd602ae3c6d4391fa579940ca11dc7a01264aa0d7127b8fb78fd98245a76563caec96fabf6ebec190b6ca2ef540eb5518bb09eaebee5a4f390ee98d445d6699dc1de9f24e0f30cae5a4af10d7771b69161bde00599c2e1fb5202ab672a414dbc1a2c7a89bdad2cc79188c7a62451a5cbe1cf15689af4e22b0eac4600a12bb6139538f2375a687665d63074a1869a31efbaa1e0253037f889a1c13feb3c018f62e4a7fe77501e85ba7853e3b75616ff615c82e7d75376381f6b839fee6e6f30ed223dbc6528ffdc58bb696c812bf1d26034ebf635d0645e060ba2a6ed6699fb7966cd2db37e2fa899218307b2ae2bc0624cf2a8f56c8993f83003f315b91d2f2786701cba0c1e0fd6ef11d16e50e6ec510382ad0ddfbc12e438ad967cb81b477e5cda5fbaf65bcfa2582c1a6808fec4527dbdc00677177d5ffd91258135597d3d265379f18cdae37b443222cb5b6e90b2d8de2521608709fe584211802d87eb034b62c42c28671efcc25ea9bfe64b5726a6515bfa9694b391898067d9b373b039ecef76191988a93166cd273378976bf5aa417111c914573ef4ef00ea94f2a2d36f1dfb8f25c1c930564a79f3c4c2016ece28c4b606c69b3026cb7d9163476fada061e405711955643c354c903b512d05e5c76d2182ecc49857840d32a845bf1335bd0040e163ce98c1f85ee00620a6fb8ac0bd570f20c80aab010112f11d3dd5111ce9af741ff79b81c6558885b49c3ad6a8f08de5c5b39b9f5899e45cc66b5dd3d6f5adde8ad928fcf91860c014651785eea6178f5ac5a8d800032a686f1876d448cbfc24e9d47abc47a96f8a9ceb73e4719236d02a1e64f491ffa5141097c077c5e5757899136664ddad7dea6336b5cae0d666e0e5f4b9900e433292549f985ffc2e6bf05bb563bea9c6dec30c5da4b29197ce7d7130dd0f9c8fb67e47d7fae2912dab6eaffc413335aa0da76b40dcb9a9a6d79b44ff2b64e5660347364ea69a105b0077ffec519d660a30ca444f1ce5593b2bb29b"
            }
         },
-        {
-            "key": "csp_Panta91",
-            "name": "🐹盘Ta┃YD",
-            "type": 3,
-            "api": "csp_Panta91",
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 1,
-            "timeout": 60,
-            "style": {
-                "type": "list"
-            },
-            "ext": {
-                "sites": "https://www.91panta.cn",
-                "proxy": "noproxy",
-                "classes": "./panta.json"
-            }
-        },
-        {
-            "key": "csp_Leijing",
-            "name": "😃雷鲸┃扫码4k",
-            "type": 3,
-            "api": "csp_Leijing",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "style": {
-                "type": "list"
-            },
-            "ext": {
-                "sites": "https://www.leijing.xyz,https://www.leijing1.com,https://leijing.xyz,https://leijing1.com",
-                "proxy": "noproxy",
-                "classes": "./leijing.json"
-            }
-        },
-        {
-            "key": "csp_Wogg",
-            "name": "😃玩偶┃扫码4k",
-            "type": 3,
-            "api": "csp_Wogg",
-            "timeout": 60,
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "sites": "https://wogg.xxooo.cf",
-                "filters": "./wogg.json",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "欧歌网盘",
-            "name": "😃欧歌┃扫码4k",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "ext": {
-                "sites": "https://woog.nxog.eu.org",
-                "filters": "./wogg2.json",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "蜡笔网盘",
-            "name": "😃蜡笔┃扫码4k",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "ext": {
-                "sites": "http://fmao.shop",
-                "filters": "./wogg2.json",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "闪电网盘",
-            "name": "😃闪电┃扫码4k",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "ext": {
-                "sites": "https://sd.sduc.site",
-                "filters": "./wogg2.json",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "二小网盘",
-            "name": "😃二小┃扫码4k",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "ext": {
-                "sites": "https://wexwp.cc",
-                "filters": "./wogg2.json",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "木偶网盘",
-            "name": "😃木偶┃扫码4k",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "ext": {
-                "sites": "https://www.muou.site",
-                "filters": "./wogg2.json",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "至臻网盘",
-            "name": "😃至臻┃扫码4k",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "ext": {
-                "sites": "https://mihdr.top",
-                "filters": "./wogg2.json",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "多多网盘",
-            "name": "😃多多┃扫码4k",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "timeout": 60,
-            "ext": {
-                "sites": "https://tv.yydsys.top/",
-                "filters": "./wogg2.json",
-                "proxy": "noproxy"
-            }
-        },
+            {
+      "key": "csp_wogg1",
+      "name": "4k扫码｜4K弹幕1",
+      "type": 3,
+      "changeable": "0",
+      "api": "csp_Duopan",
+      "filterable": 1,
+      "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0307/11/99a8688790a84bc34e00f00082776fd7.jpg;md5;95d710fd96c41285f275b40ee4272a75",
+      "ext": {
+        "site_urls": [
+          "https://woog.nxog.fun",
+          "https://woog.nxog.eu.org",
+          "https://woog.430520.xyz",
+          "https://woog.装歌.de5.net",
+          "https://ogkk.nxog.fun"
+        ],
+        "url_key": "wogg1",
+        "threadinfo": {
+          "chunksize": 459,
+          "threads": 16
+        }
+      }
+    },
+    {
+      "key": "csp_woog2",
+      "name": "4k扫码｜4K弹幕2",
+      "type": 3,
+      "changeable": "0",
+      "api": "csp_Duopan",
+      "filterable": 1,
+      "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0307/11/0f8ea2f30bb7607d0e4603fe999b64f6.jpg;md5;fb2c84ce1e3d69aa669be42e7fd3539b",
+      "ext": {
+        "site_urls": [
+          "https://ogkk.nxog.fun",
+          "https://ogkk.nxog.eu.org",
+          "https://ogkk.430520.xyz",
+          "https://ogkk.装歌.de5.net",
+          "https://woog.430520.xyz"
+        ],
+        "url_key": "woog2",
+        "threadinfo": {
+          "chunksize": 501,
+          "threads": 16
+        }
+      }
+    },
+    {
+      "key": "夸快夸快",
+      "name": "❤夸快｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://ogkk.nxog.eu.org",
+          "https://ogkk.nxog.fun",
+          "https://woog.歌.de5.net"
+        ]
+      }
+    },
+	 {
+      "key": "玩偶",
+      "name": "❤玩偶｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://woog.nxog.eu.org",
+          "https://woog.nxog.fun",
+          "https://ogkk.nxog.de5.net"
+        ]
+      },
+      "timeout": 60
+    },
+    {
+      "key": "蜡笔",
+      "name": "❤蜡笔｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "http://xiaocge.fun",
+          "http://feimo.fun",
+          "https://feimao666.fun",
+          "http://feimao888.fun",
+          "http://www.labi88.sbs",
+          "http://fmao.site",
+          "http://fmao.shop",
+          "http://xiaocgege.shop"
+        ]
+      },
+      "timeout": 60
+    },
+    {
+      "key": "至臻",
+      "name": "❤至臻｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://mihdr.top",
+          "https://www.miqk.cc",
+          "https://xiaomiai.site",
+          "https://xiaomi666.fun",
+          "https://www.mihdr.top",
+          "https://www.zhizhenpan.fun"
+        ]
+      },
+      "timeout": 60
+    },
+    {
+      "key": "多多",
+      "name": "❤多多｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://tv.yydsys.top",
+          "https://tv.yydsys.cc",
+          "https://tv.214521.xyz"
+        ]
+      },
+      "timeout": 60
+    },
+    {
+      "key": "木偶",
+      "name": "❤木偶｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://123.666291.xyz",
+          "https://666.666291.xyz",
+          "https://www.muou.site",
+          "https://www.muou.asia"
+        ]
+      },
+      "timeout": 60
+    },
+    {
+      "key": "虎斑",
+      "name": "❤虎斑｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "http://xhban.xyz:20720",
+          "http://154.222.27.33:20720"
+        ]
+      },
+      "timeout": 60
+    },
+    {
+      "key": "二小",
+      "name": "❤二小｜4K",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://www.2xiaopan.top",
+          "https://2xiaopan.top",
+          "https://www.erxiaozhan.top",
+          "https://www.2xiaozhan.top",
+          "https://wexwp.cc"
+        ]
+      },
+      "timeout": 60
+    },
+    {
+      "key": "盘搜",
+      "name": "❤盘搜｜搜索",
+      "type": 3,
+      "api": "csp_PanSou",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 60
+    },
+    {
+      "key": "阿里云盘",
+      "name": "❤我的｜阿离",
+      "type": 3,
+      "api": "csp_PanAli",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      }
+    },
+    {
+      "key": "夸克云盘",
+      "name": "❤我的｜夸克",
+      "type": 3,
+      "api": "csp_PanQuark",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      }
+    },
+    {
+      "key": "UC云盘",
+      "name": "❤我的｜UC",
+      "type": 3,
+      "api": "csp_PanUC",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      }
+    },
+    {
+      "key": "百度云盘",
+      "name": "❤我的｜肚盘",
+      "type": 3,
+      "api": "csp_PanBaidu",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      }
+    },
 		{
             "key": "csp_Jianpian",
             "name": "👌🏻荐片┃影视",
