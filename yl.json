@@ -425,9 +425,9 @@
             "key": "csp_Jianpian",
             "name": "👌🏻荐片┃影视",
             "type": 3,
+			"jar": "./源力.jar",
             "api": "csp_Jianpian",
             "searchable": 1,
-			"jar": "./源力.jar",
             "changeable": 1,
             "ext": {
                 "filters": "./json/jianpian.json",
