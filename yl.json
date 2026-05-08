@@ -64,6 +64,111 @@
             "api": "./drpy2.min.js",
             "ext": "./qq.js"
         },
+				{
+            "key": "csp_Jianpian",
+            "name": "👌🏻荐片┃影视",
+            "type": 3,
+			"jar": "./源力.jar",
+            "api": "csp_Jianpian",
+            "searchable": 1,		
+            "changeable": 1,
+            "ext": {
+                "filters": "./jianpian.json",
+                "imgUrl": "https://img.jgsfnl.com",
+                "sites": "https://api.ztcgi.com"
+            }
+        },
+		{
+            "key": "Jianpian",
+            "name": "荐片｜磁力",
+            "type": 3,
+            "api": "csp_JianpianFishGuard",
+            "searchable": 1,
+            "filterable": 1,
+            "jar": "https://modelscope-resouces.oss-cn-zhangjiakou.aliyuncs.com/avatar%2F845cd9da-991b-4b4b-b9bf-70cd5993e977.php"
+        },
+		{
+            "key": "文采",
+            "name": "文采┃秒播",
+            "type": 3,
+            "api": "csp_JpysGuard",
+            "timeout": 10,
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "jar": "./wc.jar"
+         },
+        {
+            "key": "瓜子js",
+            "name": "👌瓜子|影视",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+            "ext": "./瓜子.js"
+        },
+        {
+            "key": "柠檬",
+            "name": "👌柠檬|影视",
+            "type": 3,
+            "api": "csp_Nmvod",
+            "playerType": 2,
+            "jar": "./柠檬.jar",
+            "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"
+        },
+		  {
+            "name": "👌橘汁|影视",
+            "key": "Juzhi",
+            "type": 3,
+            "jar": "./Juzhi_spider.jar",
+            "api": "csp_Juzhi",
+            "searchable": 1,
+            "filterable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "ext": {
+              "host": "",
+              "site": "./az5.txt",
+              "version": "3.0.1.9"
+            }
+        },
+        {
+            "key": "csp_SaoHuo",
+            "name": "👌骚火|影视",
+            "type": 3,
+            "jar": "./骚火🔥.jar",
+            "api": "csp_SaoHuo"
+        },
+        {
+            "key": "狐狸磁力",
+            "name": "🦊狐狸|磁力",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "./svip.jar",
+            "ext": "./狐狸磁力.json"
+        },
+        {
+            "key": "New6v",
+            "name": "🐮New6V｜磁力",
+            "type": 3,
+            "api": "csp_New6v",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "./svip.jar",
+            "ext": "https://www.xb6v.com"
+        },
+        {
+            "key": "美剧迷",
+            "name": "🦅美剧迷｜磁力",
+            "type": 3,
+            "api": "csp_MeijuMi",
+            "jar": "./svip.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
         {
             "key": "藤藤",
             "name": "🐮4K线路1",
@@ -419,91 +524,6 @@
         "ratio": 1.433
       }
     },
-		{
-            "key": "csp_Jianpian",
-            "name": "👌🏻荐片┃影视",
-            "type": 3,
-			"jar": "./源力.jar",
-            "api": "csp_Jianpian",
-            "searchable": 1,		
-            "changeable": 1,
-            "ext": {
-                "filters": "./jianpian.json",
-                "imgUrl": "https://img.jgsfnl.com",
-                "sites": "https://api.ztcgi.com"
-            }
-        },
-        {
-            "key": "瓜子js",
-            "name": "👌瓜子|影视",
-            "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
-            "ext": "./瓜子.js"
-        },
-        {
-            "key": "柠檬",
-            "name": "👌柠檬|影视",
-            "type": 3,
-            "api": "csp_Nmvod",
-            "playerType": 2,
-            "jar": "./柠檬.jar",
-            "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"
-        },
-		  {
-            "name": "👌橘汁|影视",
-            "key": "Juzhi",
-            "type": 3,
-            "jar": "./Juzhi_spider.jar",
-            "api": "csp_Juzhi",
-            "searchable": 1,
-            "filterable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "ext": {
-              "host": "",
-              "site": "./az5.txt",
-              "version": "3.0.1.9"
-            }
-        },
-        {
-            "key": "csp_SaoHuo",
-            "name": "👌骚火|影视",
-            "type": 3,
-            "jar": "./骚火🔥.jar",
-            "api": "csp_SaoHuo"
-        },
-        {
-            "key": "狐狸磁力",
-            "name": "🦊狐狸|磁力",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "jar": "./svip.jar",
-            "ext": "./狐狸磁力.json"
-        },
-        {
-            "key": "New6v",
-            "name": "🐮New6V｜磁力",
-            "type": 3,
-            "api": "csp_New6v",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "jar": "./svip.jar",
-            "ext": "https://www.xb6v.com"
-        },
-        {
-            "key": "美剧迷",
-            "name": "🦅美剧迷｜磁力",
-            "type": 3,
-            "api": "csp_MeijuMi",
-            "jar": "./svip.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
 		 {
             "key": "暴风资源",
             "name": "暴风资源(🔥)",
