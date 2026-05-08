@@ -173,7 +173,6 @@
           "https://woog.nxog.fun",
           "https://woog.nxog.eu.org",
           "https://woog.430520.xyz",
-          "https://woog.装歌.de5.net",
           "https://ogkk.nxog.fun"
         ],
         "url_key": "wogg1",
@@ -196,7 +195,6 @@
           "https://ogkk.nxog.fun",
           "https://ogkk.nxog.eu.org",
           "https://ogkk.430520.xyz",
-          "https://ogkk.装歌.de5.net",
           "https://woog.430520.xyz"
         ],
         "url_key": "woog2",
@@ -427,10 +425,10 @@
             "type": 3,
 			"jar": "./源力.jar",
             "api": "csp_Jianpian",
-            "searchable": 1,
+            "searchable": 1,		
             "changeable": 1,
             "ext": {
-                "filters": "./json/jianpian.json",
+                "filters": "./jianpian.json",
                 "imgUrl": "https://img.jgsfnl.com",
                 "sites": "https://api.ztcgi.com"
             }
@@ -807,7 +805,7 @@
             "changeable": 1,
             "timeout": 60,
             "ext": {
-                "filters": "./json/douban.json",
+                "filters": "./douban.json",
                 "channel": "tgsearchers3,yunpan139,ydypzyfx,sbsbsnsqq,Q_dongman,yoyokuakeduanju,TG654TG,yeqingjie_GJG666,PanjClub,guoman4K,alyp_1,kuake_yppan,yunpanuc,BaiduCloudDisk,Baidu_Netdisk,bdwpzhpd,baidu_yppan,zyfb123,xx123pan,zyzhpd123,yp123pan,cloudtianyi,txtyzy,peccxinpd,yunpan189,tianyirigeng,tyypzhpd,shareAliyun,zaihuayun,ali_yppan"
             }
         },
@@ -815,6 +813,7 @@
             "key": "csp_Kan90",
             "name": "😃最全┃短剧",
             "type": 3,
+			"jar": "./源力.jar",
             "api": "csp_Kan90",
             "timeout": 60,
             "searchable": 1,
@@ -826,6 +825,7 @@
             "key": "全能短剧",
             "name": "😒短剧┃AI¹",
             "type": 3,
+			"jar", "./源力.jar",
             "api": "csp_DuanJuCen",
             "searchable": 1,
             "quickSearch": 1,
@@ -839,9 +839,10 @@
             "key": "七味短剧",
             "name": "😄极速┃短剧",
             "type": 3,
+			"jar", "./源力.jar",
             "api": "csp_XBPQ",
             "timeout": 60,
-            "ext": "./json/七味短剧.json",
+            "ext": "./七味短剧.json",
             "jar": "./svip.jar",
             "类型": "短剧"
         },
@@ -858,7 +859,7 @@
         {
             "key": "wangluozb.py",
             "name": "🐅wlzbpy",
-            "api": "./py/wlzb.py",
+            "api": "./wlzb.py",
             "filterable": 1,
             "timeout": 60,
             "quickSearch": 1,
