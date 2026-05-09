@@ -199,16 +199,7 @@
             "type": 3,
             "api": "./皮皮虾.py",
             "ext": "http://154.94.224.98:8762"
-        },
-		{
-            "key": "yidongbudong",
-            "name": "免扫4K线路5",
-            "type": 3,
-            "jar": "./YD.jar",
-            "api": "csp_YDjisu",
-            "searchable": 1,
-            "changeable": 1
-        },
+		},
         {
             "key": "hajim-腾讯备",
             "name": "🐮4k线路1备",
