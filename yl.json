@@ -15,18 +15,14 @@
             "indexs": 1,
             "ext": "./douban.json"
         },
-		{
-      "key": "配置中心",
-      "name": "🔎配置｜中心",
-      "type": 3,
-      "api": "csp_Config",
-      "searchable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.597
-      }
-    },
+           {
+            "key": "csp_Config",
+            "name": "🛠️配置┃中心",
+            "type": 3,
+            "api": "csp_Config",
+            "searchable": 0,
+            "changeable": 0
+        },
         {
             "key": "csp_iqiyi",
             "name": "👌超清线路1",
