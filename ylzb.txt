@@ -44,6 +44,10 @@ CCTV4K,http://bak.dou.ddns-ip.net/api.php?n=HKTV&id=xeauId&tk=EGUbmOwG2av7
 北京卫视4K,http://bak.dou.ddns-ip.net/api.php?n=HKTV&id=otKGnc&tk=EGUbmOwG2av7
 深圳卫视4K,http://bak.dou.ddns-ip.net/api.php?n=HKTV&id=D3sgOe&tk=EGUbmOwG2av7
 江苏卫视4K,http://bak.dou.ddns-ip.net/api.php?n=HKTV&id=l0FcGg&tk=EGUbmOwG2av7
+苏州4K,https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
+河北4K,https://event.pull.hebtv.com:443/live/live101.m3u8
+湖南4K,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+浙江4K,http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
 卫视,#genre#
 湖南卫视,http://58.56.162.102:4466/newlive/live/hls/18/live.m3u8
 江苏卫视,http://58.56.162.102:4466/newlive/live/hls/19/live.m3u8
