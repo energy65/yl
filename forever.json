@@ -257,13 +257,6 @@
             "searchable": 1,
             "changeable": 1
         },
-		{
-            "key": "皮皮虾",
-            "name": "免扫4K线路6",
-            "type": 3,
-            "api": "./py/皮皮虾.py",
-            "ext": "http://154.94.224.98:8762"
-        },
         {
             "key": "hajim-腾讯备",
             "name": "🐮4k线路1备",
