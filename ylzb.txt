@@ -97,6 +97,40 @@ CCTV4K,http://bak.dou.ddns-ip.net/api.php?n=HKTV&id=xeauId&tk=EGUbmOwG2av7
 深圳卫视,http://fn.allans.eu.org:8266/rtp/239.253.92.86:8017
 大湾区卫视,http://198.204.228.26/live/nfws.m3u8
 厦门卫视,http://198.204.228.26/live/xmws.m3u8
+
+咪咕体育,#genre#,DE=3
+移动网专用,1
+咪咕直播1,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=toShengfen&mode=1
+咪咕直播2,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005969&livemode=1&stbId=toShengfen&mode=1
+咪咕直播3,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000007218&livemode=1&stbId=toShengfen&mode=1
+咪咕直播4,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000008001&livemode=1&stbId=toShengfen&mode=1
+咪咕直播5,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000008176&livemode=1&stbId=toShengfen&mode=1
+咪咕直播6,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000008379&livemode=1&stbId=toShengfen&mode=1
+咪咕直播7,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000010129&livemode=1&stbId=toShengfen&mode=1
+咪咕直播8,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000010948&livemode=1&stbId=toShengfen&mode=1
+咪咕直播9,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000028638&livemode=1&stbId=toShengfen&mode=1
+咪咕直播10,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000031494&livemode=1&stbId=toShengfen&mode=1
+咪咕直播11,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000000097&livemode=1&stbId=toShengfen&mode=1
+咪咕直播12,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000002019&livemode=1&stbId=toShengfen&mode=1
+咪咕直播13,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000002809&livemode=1&stbId=toShengfen&mode=1
+咪咕直播14,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000003915&livemode=1&stbId=toShengfen&mode=1
+咪咕直播15,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000004193&livemode=1&stbId=toShengfen&mode=1
+咪咕直播16,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000005837&livemode=1&stbId=toShengfen&mode=1
+咪咕直播17,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000006077&livemode=1&stbId=toShengfen&mode=1
+咪咕直播18,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000006658&livemode=1&stbId=toShengfen&mode=1
+咪咕直播19,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000009788&livemode=1&stbId=toShengfen&mode=1
+咪咕直播20,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000010833&livemode=1&stbId=toShengfen&mode=1
+咪咕直播21,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000011297&livemode=1&stbId=toShengfen&mode=1
+咪咕直播22,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000011518&livemode=1&stbId=toShengfen&mode=1
+咪咕直播23,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000012558&livemode=1&stbId=toShengfen&mode=1
+咪咕直播24,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000012616&livemode=1&stbId=toShengfen&mode=1
+咪咕直播25,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000015470&livemode=1&stbId=toShengfen&mode=1
+咪咕直播26,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000015560&livemode=1&stbId=toShengfen&mode=1
+咪咕直播27,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000017678&livemode=1&stbId=toShengfen&mode=1
+咪咕直播28,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000019839&livemode=1&stbId=toShengfen&mode=1
+咪咕直播29,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000021904&livemode=1&stbId=toShengfen&mode=1
+咪咕直播30,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000023434&livemode=1&stbId=toShengfen&mode=1
+
 赛事回放,#genre#
 BWF 陈雨菲、王祉怡晋级四强 【回放】陈雨菲2-0李美妙（鸿昆） 03:00,http://47.119.24.76:59093/963444573
 BWF 陈雨菲、王祉怡晋级四强 【回放】阿迪安托/拉赫马特0-2陈柏阳/刘毅（刘钟鸣） 03:00,http://47.119.24.76:59093/963446536
@@ -2888,6 +2922,212 @@ A计划续集,https://vip1.lz-cdn10.com/20221012/2732_9fd148be/1200k/hls/mixed.m
  天堂电影1895,https://live.ottiptv.cc/douyu/9573592
  动漫唯美風,https://live.ottiptv.cc/douyu/8912038
  只想中奖噢,https://live.ottiptv.cc/douyu/8357389
+
+埋堆堆 𝟙,https://live.iill.top/huya/23740156
+埋堆堆 𝟚,https://live.iill.top/huya/23749096
+埋堆堆 𝟛,https://live.iill.top/huya/23735126
+埋堆堆 𝟜,https://live.iill.top/huya/23903123
+埋堆堆 𝟝,https://live.iill.top/huya/23734169
+埋堆堆 𝟞,https://live.iill.top/huya/23863804
+埋堆堆 𝟟,https://live.iill.top/huya/23865080
+埋堆堆 𝟠,https://live.iill.top/huya/23864973
+埋堆堆 𝟡,https://live.iill.top/huya/23903130
+埋堆堆 𝟙𝟘,https://live.iill.top/huya/23860039
+埋堆堆 𝟙𝟙,https://live.iill.top/huya/23903183
+埋堆堆 𝟙𝟚,https://live.iill.top/huya/23903196
+埋堆堆 𝟙𝟛,https://live.iill.top/huya/23728674
+埋堆堆 𝟙𝟜,https://live.iill.top/huya/23865036
+埋堆堆 𝟙𝟝,https://live.iill.top/huya/23829543
+埋堆堆 𝟙𝟞,https://live.iill.top/huya/23865161
+埋堆堆 𝟙𝟟,https://live.iill.top/huya/23865058
+埋堆堆 𝟙𝟠,https://live.iill.top/huya/23824164
+埋堆堆 𝟙𝟡,https://live.iill.top/huya/23863796
+埋堆堆 𝟚𝟘,https://live.iill.top/huya/23734183
+埋堆堆 𝟚𝟙,https://live.iill.top/huya/23728660
+埋堆堆 𝟚𝟚,https://live.iill.top/huya/23865142
+埋堆堆 𝟚𝟛,https://live.iill.top/huya/23734246
+埋堆堆 𝟚𝟜,https://live.iill.top/huya/23865171
+埋堆堆 𝟚𝟝,https://live.iill.top/huya/23734256
+埋堆堆 𝟚𝟞,https://live.iill.top/huya/23749083
+荒野求生其他,https://live.iill.top/huya/593667
+野行者其他,https://live.iill.top/huya/20072663
+跳舞其他,https://live.iill.top/huya/24634408
+茶啊二中动画,https://live.iill.top/huya/11213191
+哆啦A梦动漫,https://live.iill.top/huya/11601963
+航海王动漫,https://live.iill.top/huya/16913382
+七龙珠动漫,https://live.iill.top/huya/11601966
+猫和老鼠动漫,https://live.iill.top/huya/11352879
+中华小当家动漫,https://live.iill.top/huya/11342413
+新水浒传,http://live.metshop.top/huya/11342384
+神探狄仁杰第一部,http://live.metshop.top/huya/11352958
+神探狄仁杰第三部,http://live.metshop.top/huya/11342425
+爱情公寓,http://live.metshop.top/huya/11336726
+倚天屠龙记,http://live.metshop.top/huya/11342403
+铁齿铜牙纪晓岚,http://live.metshop.top/huya/11342396
+亮剑,http://live.metshop.top/huya/30080238
+士兵突击,http://live.metshop.top/huya/11342430
+康熙王朝,http://live.metshop.top/huya/11352940
+鬼吹灯之精绝古城,http://live.metshop.top/huya/11352871
+鬼吹灯之怒晴湘西,http://live.metshop.top/huya/11602075
+鬼吹灯之龙岭迷窟,http://live.metshop.top/huya/29465863
+鬼吹灯之云南虫谷,http://live.metshop.top/huya/11352898
+笑傲江湖,http://live.metshop.top/huya/26355790
+神雕侠侣,http://live.metshop.top/huya/11352964
+雪豹,http://live.metshop.top/huya/29580970
+陈情令,http://live.metshop.top/huya/29465862
+哆啦A梦,https://live.iill.top/huya.php?id=11601963
+猫和老鼠,https://live.iill.top/huya.php?id=11352879
+刘德华电影,https://live.iill.top/huya.php?id=11342424
+古天乐电影,https://live.iill.top/huya.php?id=29982675
+李连杰电影,https://live.iill.top/huya.php?id=11342390
+甄子丹电影,https://live.iill.top/huya.php?id=11352935
+狄仁杰系列,https://live.iill.top/huya.php?id=30080229
+沈腾电影,https://live.iill.top/huya.php?id=11601968
+黄渤电影,https://live.iill.top/huya.php?id=11352876
+强森电影,https://live.iill.top/huya.php?id=21059581
+王晶电影,https://live.iill.top/huya.php?id=11602058
+金庸武侠,https://live.iill.top/huya.php?id=11342435
+功夫电影,https://live.iill.top/huya.php?id=11352941
+贺岁电影,https://live.iill.top/huya.php?id=11601986
+士兵突击,https://live.iill.top/huya.php?id=11342430
+笑傲江湖,https://live.iill.top/huya.php?id=26355790
+神雕侠侣,https://live.iill.top/huya.php?id=11352964
+倚天屠龙记,https://live.iill.top/huya.php?id=11342403
+铁齿铜牙纪晓岚,https://live.iill.top/huya.php?id=11342396
+康熙王朝,https://live.iill.top/huya.php?id=11352940
+陈情令,https://live.iill.top/huya.php?id=29465862
+鬼吹灯之精绝古城,https://live.iill.top/huya.php?id=11352871
+鬼吹灯之怒晴湘西,https://live.iill.top/huya.php?id=11602075
+鬼吹灯之龙岭迷窟,https://live.iill.top/huya.php?id=29465863
+鬼吹灯之云南虫谷,https://live.iill.top/huya.php?id=11352898
+楚汉骄雄,https://live.iill.top/huya.php?id=23740156
+封神榜,https://live.iill.top/huya.php?id=23749096
+西游记1,https://live.iill.top/huya.php?id=23728660
+西游记2,https://live.iill.top/huya.php?id=23735126
+天龙八部,https://live.iill.top/huya.php?id=23903123
+鹿鼎记,https://live.iill.top/huya.php?id=23865080
+寻秦记,https://live.iill.top/huya.php?id=23864973
+大唐双龙传,https://live.iill.top/huya.php?id=23728674
+神雕侠侣,https://live.iill.top/huya.php?id=23865171
+射雕英雄传,https://live.iill.top/huya.php?id=23824164
+倚天屠龙记,https://live.iill.top/huya.php?id=23734246
+笑傲江湖,https://live.iill.top/huya.php?id=23865142
+刑事侦缉档案,https://live.iill.top/huya.php?id=23734169
+法政先锋,https://live.iill.top/huya.php?id=23863804
+洗冤录,https://live.iill.top/huya.php?id=23903130
+陀枪师姐,https://live.iill.top/huya.php?id=23860039
+使徒行者,https://live.iill.top/huya.php?id=23734256
+鉴证实录,https://live.iill.top/huya.php?id=23903183
+金枝欲孽,https://live.iill.top/huya.php?id=23865036
+扫黄先锋,https://live.iill.top/huya.php?id=23903196
+创世纪,https://live.iill.top/huya.php?id=23749083
+妙手仁心,https://live.iill.top/huya.php?id=23829543
+大时代,https://live.iill.top/huya.php?id=23865161
+野蛮亲家,https://live.iill.top/huya.php?id=23863796
+笑看风云,https://live.iill.top/huya.php?id=23865058
+哆啦A梦,http://live.iill.top/huya.php?id=11601963
+猫和老鼠,http://live.iill.top/huya.php?id=11352879
+刘德华电影,http://live.iill.top/huya.php?id=11342424
+古天乐电影,http://live.iill.top/huya.php?id=29982675
+李连杰电影,http://live.iill.top/huya.php?id=11342390
+甄子丹电影,http://live.iill.top/huya.php?id=11352935
+狄仁杰系列,http://live.iill.top/huya.php?id=30080229
+沈腾电影,http://live.iill.top/huya.php?id=11601968
+黄渤电影,http://live.iill.top/huya.php?id=11352876
+强森电影,http://live.iill.top/huya.php?id=21059581
+王晶电影,http://live.iill.top/huya.php?id=11602058
+金庸武侠,http://live.iill.top/huya.php?id=11342435
+功夫电影,http://live.iill.top/huya.php?id=11352941
+贺岁电影,http://live.iill.top/huya.php?id=11601986
+雪豹,http://live.iill.top/huya.php?id=29580970
+士兵突击,http://live.iill.top/huya.php?id=11342430
+笑傲江湖,http://live.iill.top/huya.php?id=26355790
+神雕侠侣,http://live.iill.top/huya.php?id=11352964
+倚天屠龙记,http://live.iill.top/huya.php?id=11342403
+铁齿铜牙纪晓岚,http://live.iill.top/huya.php?id=11342396
+康熙王朝,http://live.iill.top/huya.php?id=11352940
+庆余年,http://live.iill.top/huya.php?id=11352960
+鬼吹灯之精绝古城,http://live.iill.top/huya.php?id=11352871
+鬼吹灯之怒晴湘西,http://live.iill.top/huya.php?id=11602075
+鬼吹灯之龙岭迷窟,http://live.iill.top/huya.php?id=29465863
+鬼吹灯之云南虫谷,http://live.iill.top/huya.php?id=11352898
+家有儿女,http://live.iill.top/huya.php?id=30335591
+楚汉骄雄,http://live.iill.top/huya.php?id=23740156
+封神榜,http://live.iill.top/huya.php?id=23749096
+西游记1,http://live.iill.top/huya.php?id=23728660
+西游记2,http://live.iill.top/huya.php?id=23735126
+天龙八部,http://live.iill.top/huya.php?id=23903123
+鹿鼎记,http://live.iill.top/huya.php?id=23865080
+寻秦记,http://live.iill.top/huya.php?id=23864973
+大唐双龙传,http://live.iill.top/huya.php?id=23728674
+神雕侠侣,http://live.iill.top/huya.php?id=23865171
+射雕英雄传,http://live.iill.top/huya.php?id=23824164
+倚天屠龙记,http://live.iill.top/huya.php?id=23734246
+笑傲江湖,http://live.iill.top/huya.php?id=23865142
+刑事侦缉档案,http://live.iill.top/huya.php?id=23734169
+法政先锋,http://live.iill.top/huya.php?id=23863804
+洗冤录,http://live.iill.top/huya.php?id=23903130
+陀枪师姐,http://live.iill.top/huya.php?id=23860039
+使徒行者,http://live.iill.top/huya.php?id=23734256
+鉴证实录,http://live.iill.top/huya.php?id=23903183
+金枝欲孽,http://live.iill.top/huya.php?id=23865036
+扫黄先锋,http://live.iill.top/huya.php?id=23903196
+创世纪,http://live.iill.top/huya.php?id=23749083
+妙手仁心,http://live.iill.top/huya.php?id=23829543
+大时代,http://live.iill.top/huya.php?id=23865161
+野蛮亲家,http://live.iill.top/huya.php?id=23863796
+笑看风云,http://live.iill.top/huya.php?id=23865058
+哆啦A梦,https://live.iill.top/huya/11601963
+猫和老鼠,https://live.iill.top/huya/11352879
+喜羊羊与灰太狼,https://live.iill.top/huya/23865080
+刘德华电影,https://live.iill.top/huya/11342424
+古天乐电影,https://live.iill.top/huya/29982675
+李连杰电影,https://live.iill.top/huya/11342390
+甄子丹电影,https://live.iill.top/huya/11352935
+狄仁杰系列,https://live.iill.top/huya/30080229
+黄渤电影,https://live.iill.top/huya/11352876
+王晶电影,https://live.iill.top/huya/11602058
+金庸武侠,https://live.iill.top/huya/11342435
+功夫电影,https://live.iill.top/huya/11352941
+贺岁电影,https://live.iill.top/huya/11601986
+雪豹,https://live.iill.top/huya/29580970
+士兵突击,https://live.iill.top/huya/11342430
+神雕侠侣,https://live.iill.top/huya/11352964
+倚天屠龙记,https://live.iill.top/huya/11342403
+铁齿铜牙纪晓岚,https://live.iill.top/huya/11342396
+康熙王朝,https://live.iill.top/huya/11352940
+庆余年,https://live.iill.top/huya/11352960
+鬼吹灯之精绝古城,https://live.iill.top/huya/11352871
+鬼吹灯之怒晴湘西,https://live.iill.top/huya/11602075
+鬼吹灯之龙岭迷窟,https://live.iill.top/huya/29465863
+鬼吹灯之云南虫谷,https://live.iill.top/huya/11352898
+乌龙闯情关,https://live.iill.top/huya/26355767
+家有儿女,https://live.iill.top/huya/30335591
+永夜星河,https://live.iill.top/huya/23734169
+柳舟计,https://live.iill.top/huya/23860039
+玫瑰的故事,https://live.iill.top/huya/23865142
+梦中的那片海,https://live.iill.top/huya/26355765
+大秦赋,https://live.iill.top/huya/23903130
+唐诡之西行,https://live.iill.top/huya/26355763
+楚汉骄雄,https://live.iill.top/huya/29465854
+封神榜,https://live.iill.top/huya/29465849
+西游记1,https://live.iill.top/huya/23728660
+西游记2,https://live.iill.top/huya/29465859
+寻秦记,https://live.iill.top/huya/29465848
+大唐双龙传,https://live.iill.top/huya/23728674
+神雕侠侣,https://live.iill.top/huya/23865171
+射雕英雄传,https://live.iill.top/huya/23824164
+法政先锋,https://live.iill.top/huya/23863804
+洗冤录,https://live.iill.top/huya/29465851
+陀枪师姐,https://live.iill.top/huya/29465857
+使徒行者,https://live.iill.top/huya/23734256
+鉴证实录,https://live.iill.top/huya/23903183
+金枝欲孽,https://live.iill.top/huya/23865036
+扫黄先锋,https://live.iill.top/huya/29465855
+创世纪,https://live.iill.top/huya/29465852
+妙手仁心,https://live.iill.top/huya/29465853
+大时代,https://live.iill.top/huya/23865161
+笑看风云,https://live.iill.top/huya/29465858
 YY,#genre#
 24官频,http://bak.dou.ddns-ip.net/api.php?n=HKTV&id=39pNy5&tk=EGUbmOwG2av7
 小鬼当家,http://bak.dou.ddns-ip.net/api.php?n=HKTV&id=5tHhiK&tk=EGUbmOwG2av7
