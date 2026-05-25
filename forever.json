@@ -79,6 +79,21 @@
                 "sites": "https://api.ztcgi.com"
             }
         },
+		        {
+            "key": "奇乐影视",
+            "name": "奇乐影视",
+            "type": 3,
+            "jar": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/svip.txt",
+            "api": "csp_XBPQ",
+            "ext": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/奇乐.json"
+        },
+        {
+            "key": "新闪雷js",
+            "name": "👌🏻新闪雷|影视",
+            "type": 3,
+            "api": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/drpy2.min.js",
+            "ext": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/闪雷.js"
+        },
         {
             "key": "瓜子js",
             "name": "👌瓜子|影视",
