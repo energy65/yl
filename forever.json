@@ -272,6 +272,15 @@
             "searchable": 1,
             "changeable": 1
         },
+			{  
+			"key": "4kmovie",
+            "name": "🐮免扫4k线路6",
+            "type": 3,
+			"filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "api": "./4kmovie.py",
+        },
         {
             "key": "hajim-腾讯备",
             "name": "🐮4k线路1备",
@@ -289,53 +298,6 @@
             "searchable": 1,
             "changeable": 1,
             "ext": "https://fastlink.cokey.xyz/f/pm88tj/%E8%8A%92%E6%9E%9C.js"
-        },
-        {
-            "key": "hajim-哔哩幕",
-            "name": "🐑bili4K",
-            "type": 3,
-            "api": "csp_Bilimd",
-            "jar": "https://pan.szfx.top/down.php/14fce8ef9e7e8a40719c801ec3077b8c.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "cookie": "buvid3=961B1486-A9D6-BA43-B44F-E5105C2E681151551infoc;b_nut=1762271051;_uuid=D639891E-A1EC-DEDA-31010D-9107F211C79F852945infoc;CURRENT_FNVAL=4048;CURRENT_QUALITY=0;buvid_fp=fd3797d69b70a2dd13c1236f154c0f2b;rpdid=0zbfvSa2au|JrJRQMPU|2a8|3w1VgjcF;buvid4=D6A46F50-28C0-462D-D8BA-0EE7DBD8F43052850-025110423-ZiHCV7lF06Hrtxukykv/IAr68Rki7Yd2NZkhDNGoC9IDHRXRljk982RWyYEg/k4Z;b_lsid=2A6ED6EC_19AAB94B5FB;bsource=search_bing;home_feed_column=4;bmg_af_switch=1;bmg_src_def_domain=i1.hdslb.com;SESSDATA=d95d6456%2C1779367324%2C7b85d%2Ab2CjDaqoyhiE1Cm6vtOXSxyC8ANtsCgj-Glle4dx5Budy-rQf2KXT1XToUwxQFOFPqRoESVkpJSXlEc2IxRUtRdWh1TlpyOF9YZFRMaEtYbnpQcHBvWExEUkdfSXY0enhFYnk5Z25oTk5tXzlvMzVMaXZMbV8yVmtfNm9BRTBOby1wdUlTbXgzTllBIIEC;bili_jct=f94bd13b18d76339184d2033e1a9b574;DedeUserID=1475805666;DedeUserID__ckMd5=f58689ea373d2144;sid=qd0dn69e;theme-tip-show=SHOWED;theme-avatar-tip-show=SHOWED;bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NjQwNzQ1NTMsImlhdCI6MTc2MzgxNTI5MywicGx0IjotMX0.GRN5Ua_OahfiUTnt5Q_Ska3D025UsOjJbkxXWCK_Jw0;bili_ticket_expires=1764074493;browser_resolution=759-726"
-            },
-            "timeout": 10
-        },
-		{
-            "key": "hjim-蜡笔6",
-            "name": "🐮蜡笔免扫4K",
-            "type": 3,
-            "api": "csp_ZC4K",
-            "jar": "https://mpimg.cn/down.php/b4b695cf12db5356b2bf50afbccb7452.jar",
-            "ext": "YUhSMGNEb3ZMekV4Tmk0Mk1pNHhNek11T0RZNk5UWTJPREV2VkRRdlZEVXZZWEJwTWk1d2FIQS9jMmwwWlQxc1lXSnBNeU1qSTJ4aFlta3o=",
-            "categories": [
-            "蜡笔臻彩",
-            "蜡笔剧集",
-            "蜡笔电影",
-            "蜡笔动漫",
-            "蜡笔综艺",
-            "蜡笔短剧"
-           ]
-       },
-	    {
-            "key": "aowu-NewNoxJg",
-            "name": "🐮超速随缘免扫4K",
-            "type": 3,
-            "api": "csp_NewNoxAmns",
-            "jar": "https://gh-proxy.org/https://raw.githubusercontent.com/bzr-zd/2/main/lib/aow--dm.png",
-            "playerType": 2,
-            "searchable": 1,
-            "filterable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "ext": {
-            "name": "",
-            "password": "",
-            "data": "d895288565eb2ea7fcb9caa81e70fa9b13ee921ef90f07182de55a048be4f69da9cbf70f8b5697fc82d0499ccd36f89dc3e85804e9df9b2ade928718016082fc72dd21bb566aeaade2cbf1c7ed0d7047ad136cd3102a1a58c848c316cbcffbc341c48f17e2c5869cfbc9df7e73ea2cb95c8c104cb9d7cee2725543e287ee64b784f988700aa9be055f7ccc6e0a828c7cfe727cfbfe7de8547de6c1367c214a1ed6c8528a2feb05f0c398611c92868d24d63abcdf6d7948f622a782c88f4449d033ede28737a32eb1146ef41f4b783a67a8e9eacf5d9065a794107b73b247d1a44274eea7de64daaa1cce69635aeae613bdf3d2ce07eaa45b5596791b4bf21650a791219ddf8465ef228f29955798e36bc800dd602ae3c6d4391fa579940ca11dc7a01264aa0d7127b8fb78fd98245a76563caec96fabf6ebec190b6ca2ef540eb5518bb09eaebee5a4f390ee98d445d6699dc1de9f24e0f30cae5a4af10d7771b69161bde00599c2e1fb5202ab672a414dbc1a2c7a89bdad2cc79188c7a62451a5cbe1cf15689af4e22b0eac4600a12bb6139538f2375a687665d63074a1869a31efbaa1e0253037f889a1c13feb3c018f62e4a7fe77501e85ba7853e3b75616ff615c82e7d75376381f6b839fee6e6f30ed223dbc6528ffdc58bb696c812bf1d26034ebf635d0645e060ba2a6ed6699fb7966cd2db37e2fa899218307b2ae2bc0624cf2a8f56c8993f83003f315b91d2f2786701cba0c1e0fd6ef11d16e50e6ec510382ad0ddfbc12e438ad967cb81b477e5cda5fbaf65bcfa2582c1a6808fec4527dbdc00677177d5ffd91258135597d3d265379f18cdae37b443222cb5b6e90b2d8de2521608709fe584211802d87eb034b62c42c28671efcc25ea9bfe64b5726a6515bfa9694b391898067d9b373b039ecef76191988a93166cd273378976bf5aa417111c914573ef4ef00ea94f2a2d36f1dfb8f25c1c930564a79f3c4c2016ece28c4b606c69b3026cb7d9163476fada061e405711955643c354c903b512d05e5c76d2182ecc49857840d32a845bf1335bd0040e163ce98c1f85ee00620a6fb8ac0bd570f20c80aab010112f11d3dd5111ce9af741ff79b81c6558885b49c3ad6a8f08de5c5b39b9f5899e45cc66b5dd3d6f5adde8ad928fcf91860c014651785eea6178f5ac5a8d800032a686f1876d448cbfc24e9d47abc47a96f8a9ceb73e4719236d02a1e64f491ffa5141097c077c5e5757899136664ddad7dea6336b5cae0d666e0e5f4b9900e433292549f985ffc2e6bf05bb563bea9c6dec30c5da4b29197ce7d7130dd0f9c8fb67e47d7fae2912dab6eaffc413335aa0da76b40dcb9a9a6d79b44ff2b64e5660347364ea69a105b0077ffec519d660a30ca444f1ce5593b2bb29b"
-           }
         },
                {
             "key": "玩偶",
