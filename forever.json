@@ -279,7 +279,7 @@
 			"filterable": 1,
             "quickSearch": 1,
             "searchable": 1,
-            "api": "./4kmovie.py",
+            "api": "./4kmovie.py"
         },
         {
             "key": "hajim-腾讯备",
