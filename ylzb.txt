@@ -701,6 +701,59 @@ JET综合,http://iptv.4666888.xyz/iptv2A.php?id=51
 BBC_Earth,http://iptv.4666888.xyz/iptv2A.php?id=53
 中视经典,http://iptv.4666888.xyz/iptv2A.php?id=54
 三立戏剧,http://61.221.215.25:8800/hls/41/index.m3u8?txiptv&playlive
+
+ww#genre#
+中天新闻,rtmp://demo2.anj365.com/live/xiangjiaoge-ztxw#http://rihou.cc:555/tv/中天新闻
+中天亚洲 http://rihou.cc:555/tv/中天亚洲
+中天综合 http://rihou.cc:555/tv/中天综合
+
+
+TVBS新闻,http://rihou.cc:555/tv/[FY]tvbS新闻
+镜新闻,http://rihou.cc:555/tv/镜新闻
+民视新闻,http://rihou.cc:555/tv/民视新闻
+中视新闻卡http://rihou.cc:555/tv/中视新闻 
+台視新聞 
+
+民视新闻,http://211.72.174.95:8117/0.ts$原生解码最佳
+中视,http://211.72.174.95:8113/0.ts$原生解码最佳
+华视,http://211.72.174.95:8114/0.ts$原生解码最佳
+公视,http://211.72.174.95:8116/0.ts$原生解码最佳
+民视,http://211.72.174.95:8115/0.ts$原生解码最佳
+台视,http://211.72.174.95:8112/0.ts$原生解码最佳
+
+ 
+ 
+
+民視綜藝,http://iptv.4666888.xyz/iptv2A.php?id=46
+TVBS精采,http://iptv.4666888.xyz/iptv2A.php?id=47
+台视综合,http://iptv.4666888.xyz/iptv2A.php?id=51
+八度空间,http://iptv.4666888.xyz/iptv2A.php?id=52
+民视影剧,http://iptv.4666888.xyz/iptv2A.php?id=53
+
+民视,rtmp://f13h.mine.nu/sat/tv051
+台视,rtmp://f13h.mine.nu/sat/tv071
+中视,rtmp://f13h.mine.nu/sat/tv091
+华视,rtmp://f13h.mine.nu/sat/tv111
+纬来体育,rtmp://f13h.mine.nu/sat/tv721
+纬来体育,https://hls.iill.top/api/wlty/index.m3u8
+纬来育乐,rtmp://f13h.mine.nu/sat/tv701
+纬来日本,rtmp://f13h.mine.nu/sat/tv771
+东森超视,rtmp://f13h.mine.nu/sat/tv331
+MoMo综合,rtmp://f13h.mine.nu/sat/tv761
+ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731
+ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741
+NOW 70s,https://php.946985.filegear-sg.me/mytv265.php?id=NOW7
+NOW 80s,https://php.946985.filegear-sg.me/mytv265.php?id=NOW8
+NOW ROCK,https://php.946985.filegear-sg.me/mytv265.php?id=NOWR
+NOW 90s00s,https://php.946985.filegear-sg.me/mytv265.php?id=NOW9
+Concerto,https://php.946985.filegear-sg.me/mytv265.php?id=CONC
+TRACEURBAN,https://php.946985.filegear-sg.me/mytv265.php?id=TRUR
+NewsWorld,https://php.946985.filegear-sg.me/mytv265.php?id=NSWD
+Taiwan+,https://fastly.live.brightcove.com/6385235869112/ap-northeast-1/6282251407001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaWU4OWZvLmVncmVzcy5pdjNqZDgiLCJhY2NvdW50X2lkIjoiNjI4MjI1MTQwNzAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MjgyMjUxNDA3MDAxIl0sImp0aSI6IjYzODUyMzU4NjkxMTIifQ.4c-V1Ks3nBx9nRljtn5-jCNP_nLuWBbk-pw9BFWZfMQ/playlist-hls.m3u8
+新唐人,http://rihou.cc:555/tv/NTD
+Love Nature,http://rihou.cc:555/tv/LoveNature 
+Wild TV,https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
+
 咪咕体育,#genre#,DE=3
 移动网专用,1
 咪咕直播1,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=toShengfen&mode=1
