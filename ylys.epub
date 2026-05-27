@@ -4,6 +4,17 @@
     "logo": "./1.gif",
     "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
     "sites": [
+         {
+            "key": "豆瓣片单",
+            "name": "🐡【源力影视】祝您观影愉快 ┃ 加入'源力影视q群'，天天分享，精彩不断,坚持转存 福利满满😃😃😁😁😁😁",
+            "type": 3,
+            "api": "csp_Douban",
+            "jar": "./34dc804020748504a15e2767b37656c3.jar",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "./daohang.txt"
+        },
         {
             "key": "csp_Douban",
             "name": "源力影视接口免费，不要上当受骗，qq群：1075309029",
