@@ -1,7 +1,7 @@
 {
   "urls": [
     {
-      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/yl.json",
+      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/ylys.epub",
       "name": "⚡源力影视｜源力线路"
     },
     {
@@ -83,6 +83,12 @@
     {
       "url": "https://gitee.com/yiwu369/6758/raw/master/%E9%9D%92%E9%BE%99/1.json",
       "name": "⚡源力影视｜青龙影线"
-    }
+    },
+    {"url": "https://9280.kstore.space/wex.json"，
+      "name": "⚡️王二小放牛娃"
+    },
+    {
+      "url": "http://宝盒接口.top","name": "⚡️宝盒"
+    },
   ]
 }
