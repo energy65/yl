@@ -1447,7 +1447,9 @@
             "type": 0,
             "url": "./ylzb.txt",
             "playerType": 2,
-            "timeout": 10
+            "timeout": 10,
+			"epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+            "logo": "https://epg.112114.eu.org/logo/{name}.png"
         },
         {
             "name": "🔯develop202",
