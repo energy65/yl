@@ -1195,7 +1195,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "./少儿教育.json"
+      "ext" : "./少儿教育2.json"
     },
     {
       "key" : "小学课堂2",
@@ -1206,7 +1206,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "./小学课堂.json"
+      "ext" : "./小学课堂2.json"
     },
     {
       "key" : "初中课堂2",
@@ -1217,7 +1217,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "./初中课堂.json"
+      "ext" : "./初中课堂2.json"
     },
     {
       "key" : "高中教育2",
@@ -1228,7 +1228,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "./高中课堂.json"
+      "ext" : "./高中课堂2.json"
     },
     {
       "key" : "外语课堂",
