@@ -1107,7 +1107,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童拼音.json"
+      "ext" : "./儿童拼音.json"
     },
     {
       "key" : "儿童识字",
@@ -1118,7 +1118,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童识字.json"
+      "ext" : "./儿童识字.json"
     },
     {
       "key" : "儿童英语",
@@ -1129,7 +1129,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童英语.json"
+      "ext" : "./儿童英语.json"
     },
     {
       "key" : "儿童硬笔",
@@ -1140,7 +1140,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童硬笔.json"
+      "ext" : "./儿童硬笔.json"
     },
     {
       "key" : "儿童思维",
@@ -1151,7 +1151,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童思维.json"
+      "ext" : "./儿童思维.json"
     },
     {
       "key" : "儿童口才",
@@ -1162,7 +1162,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童口才.json"
+      "ext" : "./儿童口才.json"
     },
     {
       "key" : "儿童编程",
@@ -1173,7 +1173,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童编程.json"
+      "ext" : "./儿童编程.json"
     },
     {
       "key" : "儿童武术",
@@ -1184,7 +1184,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/儿童武术.json"
+      "ext" : "./儿童武术.json"
     },
  {
       "key" : "少儿教育2",
@@ -1195,7 +1195,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/少儿教育.json"
+      "ext" : "./少儿教育.json"
     },
     {
       "key" : "小学课堂2",
@@ -1206,7 +1206,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/小学课堂.json"
+      "ext" : "./小学课堂.json"
     },
     {
       "key" : "初中课堂2",
@@ -1217,7 +1217,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/初中课堂.json"
+      "ext" : "./初中课堂.json"
     },
     {
       "key" : "高中教育2",
@@ -1228,7 +1228,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/高中课堂.json"
+      "ext" : "./高中课堂.json"
     },
     {
       "key" : "外语课堂",
@@ -1239,7 +1239,7 @@
       "searchable" : 0,
       "quickSearch" : 0,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/外语课堂.json"
+      "ext" : "./外语课堂.json"
     },
     {
       "key" : "小灯塔百科",
@@ -1250,7 +1250,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/小灯塔百科.json"
+      "ext" : "./小灯塔百科.json"
     },
     {
       "key" : "小灯塔科学",
@@ -1261,7 +1261,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/小灯塔科学.json"
+      "ext" : "./小灯塔科学.json"
     },
     {
       "key" : "小灯塔地理",
@@ -1272,7 +1272,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/小灯塔地理.json"
+      "ext" : "./小灯塔地理.json"
     },
     {
       "key" : "小灯塔国学",
@@ -1283,7 +1283,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/小灯塔国学.json"
+      "ext" : "./小灯塔国学.json"
     },
     {
       "key" : "小灯塔人文",
@@ -1294,7 +1294,7 @@
       "searchable" : 0,
       "quickSearch" : 1,
       "filterable" : 1,
-      "ext" : "http://xhztv.top/dc/神仙/lib/小灯塔人文.json"
+      "ext" : "./小灯塔人文.json"
     },
         {
             "key": "csp_bilims",
