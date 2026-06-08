@@ -451,6 +451,13 @@ CHC影迷电影,http://gat.bkpcp.top:80/ymg.php?id=ymdy
 邵氏喜剧,http://feilong123.vip/409990236/tv.php?id=ssxj
 邵氏喜剧,http://38.75.136.137:98/gslb/dsdqpub/lbssxj.m3u8?auth=testpub
 邵氏喜剧,https://stream1.freetv.fun/5b5db4070d49b6949aad5a643411dbcf20868919c31ec99f9881cc1e19f2eaa0.m3u8
+邵氏楚原专场,http://173.208.212.130:8181/1080p/sscy.m3u8
+邵氏功夫电影,http://173.208.212.130:8181/1080p/ssgf.m3u8
+邵氏女侠,http://173.208.212.130:8181/1080p/ssnx.m3u8
+邵氏奇案,http://173.208.212.130:8181/1080p/ssqa.m3u8
+邵氏武侠电影,http://173.208.212.130:8181/1080p/sswx.m3u8
+邵氏喜剧电影,http://173.208.212.130:8181/1080p/ssxj.m3u8
+邵氏张彻专场,http://173.208.212.130:8181/1080p/sszc.m3u8
 
 
 
