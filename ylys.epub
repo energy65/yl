@@ -19,8 +19,8 @@
             "key": "配置中心",
             "name": "❤配置｜中心",
             "type": 3,
-			"jar": "./yl4.jar",
-            "api": "csp_Config",
+			"jar":"./ylplus.txt",
+            "api": "csp_AAConfigAmns",
             "searchable": 0,
             "changeable": 0,
             "style": {
@@ -98,7 +98,7 @@
             "key": "瓜子js",
             "name": "👌瓜子|影视",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+            "api": "./drpy2.min.js",
             "ext": "./瓜子.js"
         },
         {
