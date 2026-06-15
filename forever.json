@@ -970,6 +970,17 @@
             "searchable": 1,
             "type": 3
         },
+		{
+      "key": "csp_Music",
+      "name": "🎵MUSIC┃听歌",
+      "type": 3,
+      "api": "csp_Music",
+      "quickSearch": 0,
+      "timeout": 12,
+      "searchable": 0,
+      "ext": "",
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php"
+    },
         {
             "key": "csp_Bili",
             "name": "🅱️哔哩┃合集",
