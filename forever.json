@@ -658,6 +658,74 @@
             },
             "timeout": 60
         },
+		{
+            "key": "csp_GuanYing",
+            "name": "😂观影┃4K",
+            "type": 3,
+			"jar":"./vox.jar",
+            "api": "csp_GuanYing",
+            "searchable": 1,
+            "changeable": 1,
+            "timeout": 60,
+            "ext": {
+                "cookie": "",
+                "filters": "./json/guanying.json",
+                "sites": "https://www.xn--wcv59z.com/",
+                "proxy": "noproxy"
+            }
+        }, 
+		{
+            "key": "csp_PingLian",
+            "name": "😃盘链┃4K",
+            "type": 3,
+			"jar":"./vox.jar",
+            "api": "csp_PingLian",
+            "searchable": 1,
+            "changeable": 1,
+            "timeout": 60,
+            "ext": {
+                "cookie": "",
+                "filters": "./json/pinglian.json",
+                "sites": "https://pinglian.lol",
+                "proxy": "proxy"
+            }
+        }, 
+		{
+            "key": "csp_Gyzzs",
+            "name": "🦆光鸭┃至臻",
+            "type": 3,
+			"jar":"./vox.jar",
+            "searchable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 60,
+            "api": "csp_Qsxy",
+            "ext": {
+                "cookie": "",
+                "comment": ""
+            }
+        },
+		{
+            "key": "csp_XinTiao",
+            "name": "🚴心跳┃4K",
+            "type": 3,
+			"jar":"./vox.jar",
+            "timeout": 60,
+            "api": "csp_XinTiao",
+            "searchable": 1,
+            "changeable": 0
+        }, 
+		{
+            "key": "csp_QiWei",
+            "name": "🏇七味┃4K",
+            "type": 3,
+			"jar":"./vox.jar",
+            "timeout": 60,
+            "api": "csp_QiWei",
+            "searchable": 1,
+            "changeable": 0
+        },
 		 {
             "key": "暴风资源",
             "name": "暴风资源(🔥)",
