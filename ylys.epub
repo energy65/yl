@@ -28,6 +28,15 @@
                 "ratio": 1.597
             }
         },
+		{
+            "key": "弹幕",
+            "name": "弹幕配置",
+            "type": 3,
+            "api": "csp_Huban",
+            "jar": "./HubanTCR.jar",
+            "searchable": 0,
+            "changeable": 0
+        },
 				{
             "key": "csp_Jianpian",
             "name": "👌🏻荐片┃影视",
