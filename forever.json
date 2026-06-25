@@ -1553,61 +1553,6 @@
             "type": 2,
             "url": "Sequence"
         },
-    {
-      "name": "Easy解析22",
-      "type": 1,
-      "url": "https://jxc.easy123.ccwu.cc/easy22?pwd=qun807916734&url=",
-      "ext": {
-        "header": {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
-        }
-      }
-    },
-        {
-      "name": "Easy解析1",
-      "type": 0,
-      "url": "http://gktv.cc:121/api/?key=wang10086&url=",
-      "ext": {
-        "flag": [
-          "mgtv",
-          "qiyi",
-          "imgo",
-          "爱奇艺",
-          "奇艺",
-          "qq",
-          "腾讯",
-          "youku",
-          "优酷",
-          "pptv",
-          "PPTV",
-          "letv",
-          "乐视",
-          "leshi",
-          "bilibili",
-          "哔哩哔哩",
-          "哔哩",
-          "芒果"
-        ],
-        "header": {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
-        }
-      }
-    },
-        {
-            "name": "解析1",
-            "type": 1,
-            "url": "http://ui6.970088.xyz/api.php?laiyuan=jiying&key=aini&url="
-        },
-        {
-            "name": "解析2",
-            "type": 1,
-            "url": "https://nm.4688888.xyz/niuma.php?key=dfl&url="
-        },
-	    {
-            "name": "解析3",
-            "type": 1,
-            "url": "http://jx.uipik.cn/api/parse.php?iface_code=gj&key=I27WH2ytKa3R3EM4FrWP4ueWj84Db3ts&url="
-        },
         {
             "name": "VIP解析(随机4k)",
             "type": 1,
