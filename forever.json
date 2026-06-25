@@ -110,6 +110,64 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
             "ext": "./瓜子.js"
         },
+		    {
+          "key": "永乐JS",
+          "name": "👌永乐丨JS",
+          "type": 3,
+          "api": "https://mpimg.cn/down.php/0338609bd59d7b27226f5a269ec97936.js",
+          "style": {
+            "type": "rect",
+            "ratio": 1.33
+          },
+          "changeable": 1
+       },
+        {
+          "key": "猎手PY",
+          "name": "👌猎手丨PY",
+          "api": "https://mpimg.cn/down.php/60fab5ff33f0b0fd88f099ae3be708bf.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
+	        {
+          "key": "兄弟PY",
+          "name": "👌兄弟丨PY",
+          "api": "https://mpimg.cn/down.php/b1cdcf76574a0cb24d5b937d46458cdf.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
+		 {
+            "key": "鹊桥",
+            "name": "👌鹊桥｜影视 ",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "https://wp.kayyw.com/f/bobgtv/%E5%B0%B1%E5%87%A0%E4%B8%AA.jar",
+            "ext": {
+                "副标题": "保护正版，人人有责",
+                "简介": "请不要相信视频中的广告，以免上当受骗！+description\" content=\"&&\"",
+                "线路标题": "官方线路",
+                "请求头": "User-Agent$MOBILE_UA",
+                "编码": "UTF-8",
+                "分类url": "http://114bate.com/hdshow/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
+                "分类": "电影$1#电视剧$2#综艺$3#动漫$4#短剧$5#日韩$6"
+            }
+        },
+		{
+            "key": "四叶草",
+            "name": "👌四叶草",
+            "type": 3,
+            "api": "https://pan.szfx.top/down.php/08343ea7d5d8d12da1c16f9ccf03040d.js",
+            "ext": {
+                "host": "http://107.151.244.162:6622",
+                "key": "wNCwbXzr0Bm6cS2C",
+                "init": "V122",
+                "api": 2,
+                "ua": "okhttp/3.10.0"
+            }
+        },
         {
             "key": "柠檬",
             "name": "👌柠檬|影视",
@@ -281,14 +339,15 @@
             "searchable": 1,
             "changeable": 1
         },
-			{  
-			"key": "4kmovie",
-            "name": "🐮免扫4k线路6",
+         {
+            "key": "极影",
+            "name": "极影(真4k)",
             "type": 3,
-			"filterable": 1,
-            "quickSearch": 1,
+            "api": "https://fastlink.cokey.xyz/f/5lO2Fd/%E6%9E%81%E5%BD%B1.js",
             "searchable": 1,
-            "api": "./4kmovie.py"
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "http://cmsyun2.qijiyun.vip/api.php/app/"
         },
         {
             "key": "hajim-腾讯备",
@@ -924,6 +983,20 @@
             "searchable": 1,
             "type": 3
         },
+		{
+      "key": "游戏直播",
+      "name": "🎮游戏丨直播",
+      "type": 3,
+      "jar": "https://v6.gh-proxy.org/https://raw.githubusercontent.com/chitue/dongliTV/refs/heads/main/jar/dongli-spider.jar;md5;a857d2c26e967488b422d536d145fe1f",
+      "api": "csp_KuaiShou",
+      "changeable": 0,
+      "filterable": 1,
+      "timeout": 10,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      }
+    },
         {
             "key": "兔小贝",
             "name": "🐰兔小贝|少儿",
@@ -970,6 +1043,16 @@
             "searchable": 1,
             "type": 3
         },
+				{
+      "key": "糖豆广场舞",
+      "name": "🎶糖豆丨广场舞",
+      "type": 1,
+      "api": "https://kk.666888.club/vod/cibn_api.php/provide/vod/",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "filterable": 0
+    },
         {
             "key": "爱玩音乐",
             "name": "爱玩🎤音乐",

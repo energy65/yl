@@ -84,33 +84,24 @@
           },
           "changeable": 1
        },
-	       {
-      "key": "两个BT",
-      "name": "👌2BT丨PY",
-      "api": "https://mpimg.cn/down.php/447cf39f4cb26681ecacfd7f29cd0029.py",
-      "filterable": 1,
-      "quickSearch": 1,
-      "searchable": 1,
-      "type": 3
-    },
-    {
-      "key": "猎手PY",
-      "name": "👌猎手丨PY",
-      "api": "https://mpimg.cn/down.php/60fab5ff33f0b0fd88f099ae3be708bf.py",
-      "filterable": 1,
-      "quickSearch": 1,
-      "searchable": 1,
-      "type": 3
-    },
-	    {
-      "key": "兄弟PY",
-      "name": "👌兄弟丨PY",
-      "api": "https://mpimg.cn/down.php/b1cdcf76574a0cb24d5b937d46458cdf.py",
-      "filterable": 1,
-      "quickSearch": 1,
-      "searchable": 1,
-      "type": 3
-    },
+        {
+          "key": "猎手PY",
+          "name": "👌猎手丨PY",
+          "api": "https://mpimg.cn/down.php/60fab5ff33f0b0fd88f099ae3be708bf.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
+	        {
+          "key": "兄弟PY",
+          "name": "👌兄弟丨PY",
+          "api": "https://mpimg.cn/down.php/b1cdcf76574a0cb24d5b937d46458cdf.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
         {
             "key": "柠檬",
             "name": "👌柠檬|影视",
@@ -925,6 +916,20 @@
             "searchable": 1,
             "type": 3
         },
+		{
+      "key": "游戏直播",
+      "name": "🎮游戏丨直播",
+      "type": 3,
+      "jar": "https://v6.gh-proxy.org/https://raw.githubusercontent.com/chitue/dongliTV/refs/heads/main/jar/dongli-spider.jar;md5;a857d2c26e967488b422d536d145fe1f",
+      "api": "csp_KuaiShou",
+      "changeable": 0,
+      "filterable": 1,
+      "timeout": 10,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      }
+    },
         {
             "key": "兔小贝",
             "name": "🐰兔小贝|少儿",
