@@ -15,18 +15,29 @@
             "indexs": 1,
             "ext": "./douban.json"
         },
-        {
-            "key": "配置中心",
-            "name": "❤配置｜中心",
+                {
+            "name": "🔩配置|中心",
+            "key": "MyConfig",
+			"jar":"./am.jar",
+            "type": 3,
+            "api": "csp_MyConfigAmns",
+            "searchable": 0,
+            "filterable": 0,
+            "quickSearch": 0,
+            "changeable": 0
+        },
+		{
+            "name": "弹幕设置",
+            "key": "GoConfig",
             "type": 3,
 			"jar":"./am.jar",
-            "api": "csp_AAConfigAmns",
+            "api": "csp_GoConfigAmns",
+            "indexs": 1,
             "searchable": 0,
+            "filterable": 0,
+            "quickSearch": 0,
             "changeable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            }
+            "ext": "https://cnb.cool/srka/aow/-/git/raw/main/json/douban.json"
         },
 				{
             "key": "csp_Jianpian",
