@@ -19,7 +19,7 @@
             "key": "配置中心",
             "name": "❤配置｜中心",
             "type": 3,
-			"jar":"./ylplus.txt",
+			"jar":"./am.jar",
             "api": "csp_AAConfigAmns",
             "searchable": 0,
             "changeable": 0,
