@@ -18,6 +18,7 @@ class Spider(Spider):
         self.session.mount("https://", adapter)
         self.headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"}
         self.session.headers.update(self.headers)
+        self._verified = False
 
     def getName(self): return "爱听音乐"
     def isVideoFormat(self, url): return bool(re.search(r'\.(m3u8|mp4|mp3|m4a|flv)(\?|$)', url or "", re.I))
@@ -225,15 +226,45 @@ class Spider(Spider):
             if headers: h.update(headers)
             r = (self.session.post if method == "POST" else self.session.get)(f"{self.host}{path}", params=params, data=data, headers=h, timeout=10, allow_redirects=False)
             if loc := r.headers.get("Location"): return self._abs(loc.strip())
+            ct = r.headers.get("Content-Type", "")
+            if "text/html" in ct and "verifyForm" in r.text:
+                if self._verify_human():
+                    r = (self.session.post if method == "POST" else self.session.get)(f"{self.host}{path}", params=params, data=data, headers=h, timeout=10, allow_redirects=False)
+                    if loc := r.headers.get("Location"): return self._abs(loc.strip())
+                    ct = r.headers.get("Content-Type", "")
+            if "application/json" in ct or r.text.strip().startswith("{"):
+                return self._abs(r.json().get("url", "").replace(r"\/", "/")) or (r.text.strip() if r.text.strip().startswith("http") else "")
             return self._abs(r.json().get("url", "").replace(r"\/", "/")) or (r.text.strip() if r.text.strip().startswith("http") else "")
         except: return ""
 
     def getpq(self, url):
         import time
-        for _ in range(2): 
-            try: return pq(self.session.get(self._abs(url), timeout=5).text)
-            except: time.sleep(0.1)
+        for attempt in range(3):
+            try:
+                r = self.session.get(self._abs(url), timeout=10)
+                doc = pq(r.text)
+                if doc('input[name=csrf_token]').length and doc('#verifyForm').length:
+                    if self._verify_human():
+                        continue
+                return doc
+            except: time.sleep(0.3)
         return pq("<html></html>")
+
+    def _verify_human(self):
+        try:
+            r = self.session.get(self.host, timeout=10)
+            doc = pq(r.text)
+            csrf_token = doc('input[name=csrf_token]').val()
+            if not csrf_token:
+                return False
+            r2 = self.session.post(self.host, data={'csrf_token': csrf_token, 'human_check': 'on'}, timeout=10, allow_redirects=True)
+            doc2 = pq(r2.text)
+            if not (doc2('input[name=csrf_token]').length and doc2('#verifyForm').length):
+                self._verified = True
+                return True
+        except:
+            pass
+        return False
 
     def _abs(self, url): return url if url.startswith("http") else (f"{self.host}{'/' if not url.startswith('/') else ''}{url}" if url else "")
     def e64(self, text): return b64encode(text.encode("utf-8")).decode("utf-8")
