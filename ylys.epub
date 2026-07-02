@@ -888,28 +888,6 @@
             "type": 3
         },
 		      {
-            "key": "某抑云音乐网",
-            "name": "🎶某抑云|音乐",
-            "api": "./网易云音乐1.py",
-            "filterable": 1,
-            "timeout": 60,
-            "quickSearch": 1,
-            "searchable": 1,
-            "type": 3
-        },
-		{
-            "name": "🎶酷狗|音乐",
-            "key": "KuGou",
-            "type": 3,
-            "jar": "./yinyue.jar",
-            "api": "csp_KuGouAmns",
-            "searchable": 1,
-            "filterable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "genre": "music"
-        },
-		      {
             "key": "啊哈DJ",
             "name": "🎶啊哈DJ",
             "type": 3,
