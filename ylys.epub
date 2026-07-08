@@ -272,7 +272,7 @@
 			"filterable": 1,
             "timeout": 60,
             "quickSearch": 1,
-            "searchable": 1,
+            "searchable": 1
         },
 		{
             "key": "yidongbudong",
