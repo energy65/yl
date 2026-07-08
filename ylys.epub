@@ -265,11 +265,14 @@
             "filterable": 1,
             "ext": "AXCBj5iowoVvHyi5t1+KdWKiwkguKBtxl+07UD+Yhlqa/ZPfvqsDVbvJjODnQyU9zCkd35xXPE5YEyFzoQdfnzrLSxPdSbNuguQnZpaa7FwK9J8rZYQCsaqrfXlbGcakhiSRXtj5RJLW6waEroeVrjCkbVz/xgEld9MVOgFkSZGuPPiKcJQKB+rzqXMVicBbol8cijO1iWzXIeuPfGQLOZvVTFZqrZGkFtR+j5+Jj0AWDDQ494uey8XIxIejWMSibD8xob6I77m/krY9DmZM6jHdG26MwkLkyGO9lSDubISJoKFzFYPM137ZDvJSIyWjioL/CkarK1A6hiRZK1o02os+l5CGFZZZWf4mLrh3WDXWitiaCnQGv94+zOt+ztjY5CNHBKAtlEKoes5JEaYYRLi661H77z9VErCFm5NwNxJ6wYLnRIHCM6/haRx0GqPR/h1tfPqZBhJQTJVgz6N80Hz1GRtDZKDw45BCkkjwtEnk9uKJF93dH/jThb4BcA9XxzEEV3mFUp8qXPUtJF0zxlJtnoYBDCEWT4Ax+h4kUa+jU8mB7Q8/38exbw1CsJphYP5wBYD07UfiUYZj/PW0n0f7/Zw/IGaF2bzJiYK3+kySYrvxTFB8dR3YnmEoqDSqB799pAapyoKhs+Re4/wW2klu3yDDPA5ePZj/R/+1MgXn/w4i2d/S/Cb494oEOCtz0jukudu8Ca1qZq9K+fVxxy1mEsa6yJUR3kvXHV1cojO/0MJhkABoGPFhnHGJK4/fVNJkCIMbLvetur4ZXLYZTss="
         },
-		{  "key": "皮皮虾",
-            "name": "🐮4k线路4",
+		{  "key": "枫叶影院",
+            "name": "🐮枫叶影院|4k",
             "type": 3,
-            "api": "./皮皮虾.py",
-            "ext": "http://154.94.224.98:8762"
+            "api": "./枫叶影院.py",
+			"filterable": 1,
+            "timeout": 60,
+            "quickSearch": 1,
+            "searchable": 1,
         },
 		{
             "key": "yidongbudong",
@@ -279,15 +282,6 @@
             "api": "csp_YDjisu",
             "searchable": 1,
             "changeable": 1
-        },
-			{  
-			"key": "4kmovie",
-            "name": "🐮免扫4k线路6",
-            "type": 3,
-			"filterable": 1,
-            "quickSearch": 1,
-            "searchable": 1,
-            "api": "./4kmovie.py"
         },
         {
             "key": "hajim-腾讯备",
