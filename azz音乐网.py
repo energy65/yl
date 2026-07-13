@@ -198,8 +198,11 @@ class Spider(Spider):
             if id and id.startswith('http'):
                 play_url = id
             elif '$' in str(id):
-                parts = str(id).split('$', 1)
-                if len(parts) == 2:
+                parts = str(id).split('$')
+                if len(parts) == 3:
+                    play_url = parts[1]
+                    pic = parts[2]
+                elif len(parts) == 2:
                     play_url = parts[1]
             else:
                 play_url = id
@@ -212,16 +215,12 @@ class Spider(Spider):
                         data = json.loads(result)
                         if data.get('url'):
                             play_url = data['url']
-                            pic = data.get('pic', '')
+                            api_pic = data.get('pic', '')
+                            if api_pic:
+                                pic = api_pic
                             lrc_url = data.get('lrc', '')
                             if lrc_url:
-                                lrc_content = self._fetch_api(lrc_url)
-                                if lrc_content:
-                                    try:
-                                        lrc_data = json.loads(lrc_content)
-                                        lrc = lrc_data.get('lrc', '')
-                                    except:
-                                        lrc = lrc_content
+                                lrc = self._fetch_lrc(lrc_url)
 
                             kuwo_rid = self._extract_kuwo_rid(pic)
                             if kuwo_rid:
@@ -239,6 +238,7 @@ class Spider(Spider):
                 'header': header,
                 'pic': pic,
                 'lrc': lrc,
+                'vod_lyric': lrc,
             }
         except Exception as e:
             print(f'[{self.name}] 播放失败: {e}')
@@ -247,6 +247,25 @@ class Spider(Spider):
                 'playUrl': '',
                 'url': str(id),
             }
+
+    def _fetch_lrc(self, lrc_url):
+        lrc = ''
+        try:
+            import requests as req
+            r = req.get(lrc_url, timeout=10, verify=False)
+            if r.status_code == 200:
+                text = r.text.strip()
+                if text.startswith('{'):
+                    try:
+                        data = json.loads(text)
+                        lrc = data.get('lrc', '')
+                    except:
+                        pass
+                if not lrc:
+                    lrc = text
+        except Exception as e:
+            print(f'[{self.name}] 获取歌词失败: {e}')
+        return lrc
 
     def _extract_kuwo_rid(self, pic_url):
         if not pic_url:
@@ -298,6 +317,40 @@ class Spider(Spider):
             print(f'[{self.name}] 搜索失败: {e}')
             return {'list': []}
 
+    def _get_img_src(self, img):
+        if not img:
+            return ''
+        src = img.get('src', '') or img.get('data-original', '') or img.get('data-src', '')
+        if not src:
+            return ''
+        if 'gimg' in src and 'baidu.com' in src and 'src=' in src:
+            try:
+                from urllib.parse import unquote
+                real_src = ''
+                if '?' in src:
+                    from urllib.parse import urlparse, parse_qs
+                    parsed = urlparse(src)
+                    params = parse_qs(parsed.query)
+                    if 'src' in params:
+                        real_src = params['src'][0]
+                else:
+                    idx = src.find('src=')
+                    if idx >= 0:
+                        rest = src[idx + 4:]
+                        amp_idx = rest.find('&')
+                        if amp_idx >= 0:
+                            real_src = rest[:amp_idx]
+                        else:
+                            real_src = rest
+                real_src = unquote(real_src)
+                if real_src and not real_src.startswith('http'):
+                    real_src = 'http://' + real_src
+                if real_src:
+                    return real_src
+            except:
+                pass
+        return src
+
     def _parse_song_from_item(self, item):
         name_div = item.find('div', class_='name')
         pic_div = item.find('div', class_='pic')
@@ -312,10 +365,62 @@ class Spider(Spider):
             return None
         song_id = href.replace('/m/', '').replace('.html', '')
         duration = pic_div.text.strip() if pic_div else ''
+        pic = ''
+        img = item.find('img')
+        if img:
+            pic = self._get_img_src(img)
+        if not pic and pic_div:
+            img2 = pic_div.find('img')
+            if img2:
+                pic = self._get_img_src(img2)
         return {
             'vod_id': f'song_{song_id}',
             'vod_name': name,
-            'vod_pic': '',
+            'vod_pic': pic,
+            'vod_remarks': duration,
+        }
+
+    def _parse_song_from_li(self, li):
+        pic_div = li.find('div', class_='pic')
+        name_div = li.find('div', class_='name')
+        if not name_div and not pic_div:
+            return None
+        href = ''
+        name = ''
+        if name_div:
+            a = name_div.find('a')
+            if a:
+                href = a.get('href', '')
+                name = a.text.strip().replace('mv', '').strip()
+        if not href and pic_div:
+            a = pic_div.find('a')
+            if a:
+                href = a.get('href', '')
+                title = a.get('title', '')
+                if title and not name:
+                    name = title.replace('mv', '').strip()
+        if not href or '/m/' not in href:
+            return None
+        if not name:
+            return None
+        song_id = href.replace('/m/', '').replace('.html', '')
+        pic = ''
+        duration = ''
+        if pic_div:
+            img = pic_div.find('img')
+            if img:
+                pic = self._get_img_src(img)
+            playtime = pic_div.find('span', class_='playtime')
+            if playtime:
+                duration = playtime.text.strip()
+        if not pic:
+            img = li.find('img')
+            if img:
+                pic = self._get_img_src(img)
+        return {
+            'vod_id': f'song_{song_id}',
+            'vod_name': name,
+            'vod_pic': pic,
             'vod_remarks': duration,
         }
 
@@ -334,6 +439,13 @@ class Spider(Spider):
                 seen.add(vod['vod_id'])
                 videos.append(vod)
         if not videos:
+            lis = soup.select('.video_list ul li, .play_list ul li')
+            for li in lis:
+                vod = self._parse_song_from_li(li)
+                if vod and vod['vod_id'] not in seen:
+                    seen.add(vod['vod_id'])
+                    videos.append(vod)
+        if not videos:
             name_divs = soup.find_all('div', class_='name')
             for nd in name_divs:
                 a = nd.find('a')
@@ -343,10 +455,18 @@ class Spider(Spider):
                     if '/m/' in href and name and len(name) > 1 and href not in seen:
                         seen.add(href)
                         song_id = href.replace('/m/', '').replace('.html', '')
+                        pic = ''
+                        parent = nd.parent
+                        while parent:
+                            img = parent.find('img')
+                            if img:
+                                pic = self._get_img_src(img)
+                                break
+                            parent = parent.parent
                         videos.append({
                             'vod_id': f'song_{song_id}',
                             'vod_name': name,
-                            'vod_pic': '',
+                            'vod_pic': pic,
                             'vod_remarks': '歌曲',
                         })
         return videos[:50]
@@ -363,21 +483,43 @@ class Spider(Spider):
         soup = BeautifulSoup(html, 'html.parser')
         videos = []
         seen = set()
-        name_divs = soup.find_all('div', class_='name')
-        for nd in name_divs:
-            a = nd.find('a')
-            if a:
-                href = a.get('href', '')
-                name = a.text.strip().replace('mv', '').strip()
-                if '/m/' in href and name and len(name) > 1 and href not in seen:
-                    seen.add(href)
-                    song_id = href.replace('/m/', '').replace('.html', '')
-                    videos.append({
-                        'vod_id': f'song_{song_id}',
-                        'vod_name': name,
-                        'vod_pic': '',
-                        'vod_remarks': '歌曲',
-                    })
+        items = soup.find_all('div', class_='item')
+        for item in items:
+            vod = self._parse_song_from_item(item)
+            if vod and vod['vod_id'] not in seen:
+                seen.add(vod['vod_id'])
+                videos.append(vod)
+        if not videos:
+            lis = soup.select('.video_list ul li, .play_list ul li')
+            for li in lis:
+                vod = self._parse_song_from_li(li)
+                if vod and vod['vod_id'] not in seen:
+                    seen.add(vod['vod_id'])
+                    videos.append(vod)
+        if not videos:
+            name_divs = soup.find_all('div', class_='name')
+            for nd in name_divs:
+                a = nd.find('a')
+                if a:
+                    href = a.get('href', '')
+                    name = a.text.strip().replace('mv', '').strip()
+                    if '/m/' in href and name and len(name) > 1 and href not in seen:
+                        seen.add(href)
+                        song_id = href.replace('/m/', '').replace('.html', '')
+                        pic = ''
+                        parent = nd.parent
+                        while parent:
+                            img = parent.find('img')
+                            if img:
+                                pic = self._get_img_src(img)
+                                break
+                            parent = parent.parent
+                        videos.append({
+                            'vod_id': f'song_{song_id}',
+                            'vod_name': name,
+                            'vod_pic': pic,
+                            'vod_remarks': '歌曲',
+                        })
         return videos
 
     def _fetch_singer_list(self, page=1):
@@ -390,17 +532,49 @@ class Spider(Spider):
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(html, 'html.parser')
         videos = []
+        seen = set()
         singer_list = soup.find('div', class_='singer_list')
         if singer_list:
-            items = singer_list.find_all('a')
-            seen = set()
+            lis = singer_list.find_all('li')
+            for li in lis:
+                href = ''
+                title = ''
+                img_src = ''
+                a_tags = li.find_all('a')
+                for a in a_tags:
+                    a_href = a.get('href', '')
+                    if '/s/' in a_href and '.html' in a_href:
+                        href = a_href
+                    a_title = a.get('title', '') or a.text.strip()
+                    if a_title and len(a_title) > 1:
+                        title = a_title
+                    img = a.find('img')
+                    if img:
+                        s = self._get_img_src(img)
+                        if s:
+                            img_src = s
+                if not img_src:
+                    img = li.find('img')
+                    if img:
+                        img_src = self._get_img_src(img)
+                if title and href and href not in seen:
+                    seen.add(href)
+                    singer_id = href.replace('/s/', '').replace('.html', '')
+                    videos.append({
+                        'vod_id': f'singer_{singer_id}',
+                        'vod_name': title,
+                        'vod_pic': img_src,
+                        'vod_remarks': '歌手',
+                    })
+        if not videos:
+            items = singer_list.find_all('a') if singer_list else []
             for item in items:
                 href = item.get('href', '')
                 title = item.get('title', '') or item.text.strip()
                 img = item.find('img')
                 img_src = ''
                 if img:
-                    img_src = img.get('src', '') or img.get('data-original', '')
+                    img_src = self._get_img_src(img)
                 if title and href and href not in seen:
                     seen.add(href)
                     singer_id = href.replace('/s/', '').replace('.html', '')
@@ -430,10 +604,22 @@ class Spider(Spider):
             if '/p/' in href and text and len(text) > 4 and href not in seen:
                 seen.add(href)
                 pl_id = href.replace('/p/', '').replace('.html', '')
+                pic = ''
+                img = l.find('img')
+                if img:
+                    pic = self._get_img_src(img)
+                if not pic:
+                    parent = l.parent
+                    while parent:
+                        img2 = parent.find('img')
+                        if img2:
+                            pic = self._get_img_src(img2)
+                            break
+                        parent = parent.parent
                 videos.append({
                     'vod_id': f'playlist_{pl_id}',
                     'vod_name': text,
-                    'vod_pic': '',
+                    'vod_pic': pic,
                     'vod_remarks': '歌单',
                 })
         return videos
@@ -456,10 +642,22 @@ class Spider(Spider):
             if '/a/' in href and text and len(text) > 2 and href not in seen:
                 seen.add(href)
                 album_id = href.replace('/a/', '').replace('.html', '')
+                pic = ''
+                img = l.find('img')
+                if img:
+                    pic = self._get_img_src(img)
+                if not pic:
+                    parent = l.parent
+                    while parent:
+                        img2 = parent.find('img')
+                        if img2:
+                            pic = self._get_img_src(img2)
+                            break
+                        parent = parent.parent
                 videos.append({
                     'vod_id': f'album_{album_id}',
                     'vod_name': text,
-                    'vod_pic': '',
+                    'vod_pic': pic,
                     'vod_remarks': '专辑',
                 })
         return videos
@@ -492,18 +690,52 @@ class Spider(Spider):
             title_text = title_tag.string or ''
             singer_name = title_text.split('全部歌曲')[0].strip() if '全部歌曲' in title_text else title_text.split('_')[0].strip()
 
+        pic = ''
+        singer_info = soup.select_one('.singer_info .pic img')
+        if singer_info:
+            pic = self._get_img_src(singer_info)
+        if not pic:
+            singer_img = soup.find('img', class_='singer_pic')
+            if singer_img:
+                pic = self._get_img_src(singer_img)
+        if not pic:
+            play_left = soup.find('div', class_='play_left')
+            if play_left:
+                img = play_left.find('img')
+                if img:
+                    pic = self._get_img_src(img)
+
         songs = []
         seen = set()
-        name_divs = soup.find_all('div', class_='name')
-        for nd in name_divs:
-            a = nd.find('a')
-            if a:
-                href = a.get('href', '')
-                name = a.text.strip().replace('mv', '').strip()
-                if '/m/' in href and name and len(name) > 1 and href not in seen:
-                    seen.add(href)
-                    song_id = href.replace('/m/', '').replace('.html', '')
-                    songs.append(f'{name}${song_id}')
+        items = soup.find_all('div', class_='item')
+        for item in items:
+            vod = self._parse_song_from_item(item)
+            if vod:
+                song_id = vod['vod_id'].replace('song_', '')
+                if song_id not in seen:
+                    seen.add(song_id)
+                    songs.append(f'{vod["vod_name"]}${song_id}')
+        if not songs:
+            lis = soup.select('.video_list ul li, .play_list ul li')
+            for li in lis:
+                vod = self._parse_song_from_li(li)
+                if vod:
+                    song_id = vod['vod_id'].replace('song_', '')
+                    if song_id not in seen:
+                        seen.add(song_id)
+                        songs.append(f'{vod["vod_name"]}${song_id}')
+        if not songs:
+            name_divs = soup.find_all('div', class_='name')
+            for nd in name_divs:
+                a = nd.find('a')
+                if a:
+                    href = a.get('href', '')
+                    name = a.text.strip().replace('mv', '').strip()
+                    if '/m/' in href and name and len(name) > 1:
+                        song_id = href.replace('/m/', '').replace('.html', '')
+                        if song_id not in seen:
+                            seen.add(song_id)
+                            songs.append(f'{name}${song_id}')
 
         if not songs:
             return None
@@ -511,7 +743,7 @@ class Spider(Spider):
         return self._build_quality_detail(
             f'singer_{singer_id}',
             singer_name or '未知歌手',
-            '',
+            pic,
             f'歌手: {singer_name}，共{len(songs)}首歌曲',
             songs,
             f'{singer_name}的歌曲'
@@ -530,18 +762,52 @@ class Spider(Spider):
             title_text = title_tag.string or ''
             pl_name = title_text.split('歌单')[0].strip() if '歌单' in title_text else title_text.split('_')[0].strip()
 
+        pic = ''
+        singer_info = soup.select_one('.singer_info .pic img')
+        if singer_info:
+            pic = self._get_img_src(singer_info)
+        if not pic:
+            play_left = soup.find('div', class_='play_left')
+            if play_left:
+                img = play_left.find('img')
+                if img:
+                    pic = self._get_img_src(img)
+        if not pic:
+            album_pic = soup.find('img', class_='album_pic')
+            if album_pic:
+                pic = self._get_img_src(album_pic)
+
         songs = []
         seen = set()
-        name_divs = soup.find_all('div', class_='name')
-        for nd in name_divs:
-            a = nd.find('a')
-            if a:
-                href = a.get('href', '')
-                name = a.text.strip().replace('mv', '').strip()
-                if '/m/' in href and name and len(name) > 1 and href not in seen:
-                    seen.add(href)
-                    song_id = href.replace('/m/', '').replace('.html', '')
-                    songs.append(f'{name}${song_id}')
+        items = soup.find_all('div', class_='item')
+        for item in items:
+            vod = self._parse_song_from_item(item)
+            if vod:
+                song_id = vod['vod_id'].replace('song_', '')
+                if song_id not in seen:
+                    seen.add(song_id)
+                    songs.append(f'{vod["vod_name"]}${song_id}')
+        if not songs:
+            lis = soup.select('.video_list ul li, .play_list ul li')
+            for li in lis:
+                vod = self._parse_song_from_li(li)
+                if vod:
+                    song_id = vod['vod_id'].replace('song_', '')
+                    if song_id not in seen:
+                        seen.add(song_id)
+                        songs.append(f'{vod["vod_name"]}${song_id}')
+        if not songs:
+            name_divs = soup.find_all('div', class_='name')
+            for nd in name_divs:
+                a = nd.find('a')
+                if a:
+                    href = a.get('href', '')
+                    name = a.text.strip().replace('mv', '').strip()
+                    if '/m/' in href and name and len(name) > 1:
+                        song_id = href.replace('/m/', '').replace('.html', '')
+                        if song_id not in seen:
+                            seen.add(song_id)
+                            songs.append(f'{name}${song_id}')
 
         if not songs:
             return None
@@ -549,7 +815,7 @@ class Spider(Spider):
         return self._build_quality_detail(
             f'playlist_{pl_id}',
             pl_name or '未知歌单',
-            '',
+            pic,
             f'歌单: {pl_name}，共{len(songs)}首歌曲',
             songs,
             pl_name
@@ -568,18 +834,52 @@ class Spider(Spider):
             title_text = title_tag.string or ''
             album_name = title_text.split('的专辑')[0].strip() if '的专辑' in title_text else title_text.split('_')[0].strip()
 
+        pic = ''
+        singer_info = soup.select_one('.singer_info .pic img')
+        if singer_info:
+            pic = self._get_img_src(singer_info)
+        if not pic:
+            play_left = soup.find('div', class_='play_left')
+            if play_left:
+                img = play_left.find('img')
+                if img:
+                    pic = self._get_img_src(img)
+        if not pic:
+            album_pic = soup.find('img', class_='album_pic')
+            if album_pic:
+                pic = self._get_img_src(album_pic)
+
         songs = []
         seen = set()
-        name_divs = soup.find_all('div', class_='name')
-        for nd in name_divs:
-            a = nd.find('a')
-            if a:
-                href = a.get('href', '')
-                name = a.text.strip().replace('mv', '').strip()
-                if '/m/' in href and name and len(name) > 1 and href not in seen:
-                    seen.add(href)
-                    song_id = href.replace('/m/', '').replace('.html', '')
-                    songs.append(f'{name}${song_id}')
+        items = soup.find_all('div', class_='item')
+        for item in items:
+            vod = self._parse_song_from_item(item)
+            if vod:
+                song_id = vod['vod_id'].replace('song_', '')
+                if song_id not in seen:
+                    seen.add(song_id)
+                    songs.append(f'{vod["vod_name"]}${song_id}')
+        if not songs:
+            lis = soup.select('.video_list ul li, .play_list ul li')
+            for li in lis:
+                vod = self._parse_song_from_li(li)
+                if vod:
+                    song_id = vod['vod_id'].replace('song_', '')
+                    if song_id not in seen:
+                        seen.add(song_id)
+                        songs.append(f'{vod["vod_name"]}${song_id}')
+        if not songs:
+            name_divs = soup.find_all('div', class_='name')
+            for nd in name_divs:
+                a = nd.find('a')
+                if a:
+                    href = a.get('href', '')
+                    name = a.text.strip().replace('mv', '').strip()
+                    if '/m/' in href and name and len(name) > 1:
+                        song_id = href.replace('/m/', '').replace('.html', '')
+                        if song_id not in seen:
+                            seen.add(song_id)
+                            songs.append(f'{name}${song_id}')
 
         if not songs:
             return None
@@ -587,7 +887,7 @@ class Spider(Spider):
         return self._build_quality_detail(
             f'album_{album_id}',
             album_name or '未知专辑',
-            '',
+            pic,
             f'专辑: {album_name}，共{len(songs)}首歌曲',
             songs,
             f'{album_name}专辑'
@@ -609,19 +909,25 @@ class Spider(Spider):
         pic = ''
         img = soup.find('img', id='mcover')
         if img:
-            pic = img.get('src', '')
-
+            pic = self._get_img_src(img)
+        if not pic:
+            img = soup.select_one('.djpic img')
+            if img:
+                pic = self._get_img_src(img)
         if not pic:
             img = soup.find('img', class_='djpic')
             if img:
-                pic = img.get('src', '')
-
+                pic = self._get_img_src(img)
         if not pic:
-            img = soup.find('div', class_='play_left')
-            if img:
-                img2 = img.find('img')
+            play_left = soup.find('div', class_='play_left')
+            if play_left:
+                img2 = play_left.find('img')
                 if img2:
-                    pic = img2.get('src', '')
+                    pic = self._get_img_src(img2)
+        if not pic:
+            singer_info = soup.select_one('.singer_info .pic img')
+            if singer_info:
+                pic = self._get_img_src(singer_info)
 
         prefix = '微信公众号"源力软件汇" '
         qualities = ['标准128K', '高清192K', '超清320K', '无损APE']
@@ -647,21 +953,43 @@ class Spider(Spider):
         soup = BeautifulSoup(html, 'html.parser')
         videos = []
         seen = set()
-        name_divs = soup.find_all('div', class_='name')
-        for nd in name_divs:
-            a = nd.find('a')
-            if a:
-                href = a.get('href', '')
-                name = a.text.strip().replace('mv', '').strip()
-                if '/m/' in href and name and len(name) > 1 and href not in seen:
-                    seen.add(href)
-                    song_id = href.replace('/m/', '').replace('.html', '')
-                    videos.append({
-                        'vod_id': f'song_{song_id}',
-                        'vod_name': name,
-                        'vod_pic': '',
-                        'vod_remarks': '歌曲',
-                    })
+        items = soup.find_all('div', class_='item')
+        for item in items:
+            vod = self._parse_song_from_item(item)
+            if vod and vod['vod_id'] not in seen:
+                seen.add(vod['vod_id'])
+                videos.append(vod)
+        if not videos:
+            lis = soup.select('.video_list ul li, .play_list ul li')
+            for li in lis:
+                vod = self._parse_song_from_li(li)
+                if vod and vod['vod_id'] not in seen:
+                    seen.add(vod['vod_id'])
+                    videos.append(vod)
+        if not videos:
+            name_divs = soup.find_all('div', class_='name')
+            for nd in name_divs:
+                a = nd.find('a')
+                if a:
+                    href = a.get('href', '')
+                    name = a.text.strip().replace('mv', '').strip()
+                    if '/m/' in href and name and len(name) > 1 and href not in seen:
+                        seen.add(href)
+                        song_id = href.replace('/m/', '').replace('.html', '')
+                        pic = ''
+                        parent = nd.parent
+                        while parent:
+                            img = parent.find('img')
+                            if img:
+                                pic = self._get_img_src(img)
+                                break
+                            parent = parent.parent
+                        videos.append({
+                            'vod_id': f'song_{song_id}',
+                            'vod_name': name,
+                            'vod_pic': pic,
+                            'vod_remarks': '歌曲',
+                        })
         if not videos:
             links = soup.find_all('a')
             for l in links:
@@ -673,10 +1001,14 @@ class Spider(Spider):
                     name = text.replace('mv', '').strip()
                     if not name:
                         continue
+                    pic = ''
+                    img = l.find('img')
+                    if img:
+                        pic = self._get_img_src(img)
                     videos.append({
                         'vod_id': f'song_{song_id}',
                         'vod_name': name,
-                        'vod_pic': '',
+                        'vod_pic': pic,
                         'vod_remarks': '歌曲',
                     })
         return videos
