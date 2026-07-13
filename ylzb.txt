@@ -586,9 +586,6 @@ cec4,http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
 cec4,rtmp://play.cec-tv.com.cn/channel/cec-tv4
 
 弯弯省①,#genre#
-中天新闻,rtmp://demo2.anj365.com/live/xiangjiaoge-ztxw#http://rihou.cc:555/tv/中天新闻
-中天亚洲 http://rihou.cc:555/tv/中天亚洲
-中天综合 http://rihou.cc:555/tv/中天综合
 TVBS新闻,http://rihou.cc:555/tv/[FY]tvbS新闻
 镜新闻,http://rihou.cc:555/tv/镜新闻
 民视新闻,http://rihou.cc:555/tv/民视新闻
