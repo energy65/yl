@@ -27,15 +27,48 @@
                 "ratio": 1.597
             }
         },
-		{
-            "key": "弹幕",
-            "name": "弹幕配置",
-            "type": 3,
-            "api": "csp_Huban",
-            "jar": "./HubanTCR.jar",
-            "searchable": 0,
-            "changeable": 0
-        },
+          {
+      "name": "弹幕",
+      "key": "弹幕",
+      "type": 3,
+      "api": "csp_SecureDanmu",
+      "jar": "https://fastlink.cokey.xyz/f/N79LH4/danmu-spider-native.jar",
+      "searchable": 1,
+      "filterable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "apiUrls": [
+          "https://dm.abai.ccwu.cc/abai|LogVar",
+          "https://danmu.lily.lat/lilyemby",
+          "https://danmu.longemby.com/lilyemby",
+          "https://logvarrn.278612356.xyz/steven",
+          "https://logvardm.278612356.xyz/steven",
+          "https://dm.wodenas.xin/xiatianemby",
+          "https://danmu.wangziyang.top/020116",
+          "https://justdanmu.irisnb.com/iris-danmu",
+          "https://dmfl.us.ci/87654321",
+          "https://dm.660505.xyz:8443/a123456",
+          "https://dandan.wenjian.de/wenjian",
+          "https://dm.9090x.eu.org/xiaobai",
+          "https://danmu.0000996.xyz/87654321",
+          "https://dm.199333.xyz/dm",
+          "https://danmu.qianting168.com/456765847636987622146901",
+          "https://dmapi.6565n.xyz/87654321",
+          "https://dm.626258.xyz/87654321",
+          "https://logo.saodu.work:8888/87654321",
+          "http://ecs.dysobo.cn:9321/87654321",
+          "https://danmu.bona1984.com:99/87654321",
+          "https://www.zhinianruying.cc.cd/87654321",
+          "https://88920.dpdns.org/87654321",
+          "https://Dm.lJiaoVm.com/luosen",
+          "https://logvar-danmu.rinrin.top/87654321",
+          "https://logvar-rinrin.netlify.app/r1NYa9i",
+          "https://logdanmu.kongcheng666.dpdns.org/a123456",
+          "https://danmu.iyo.us.ci/theft-dastardly-prognosis-hula-agenda2-dropkick"
+        ]
+      }
+    },
 				{
             "key": "csp_Jianpian",
             "name": "👌🏻荐片┃影视",
@@ -881,29 +914,16 @@
             "searchable": 1,
             "type": 3
         },
-		      {
-            "key": "啊哈DJ",
-            "name": "🎶啊哈DJ",
-            "type": 3,
-            "jar": "./xyqxbpq新.jar",
-            "api": "csp_XBPQ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./啊哈DJ.json"
-        },
-        #DJ呦呦音乐网−优化重组.json
+		 {
+          "key": "DJ音乐网 PY",
+          "name": "👌DJ音乐网丨PY",
+          "api": "./DJ音乐网.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },     
         {
-            "key": "呦呦DJ",
-            "name": "🎶呦呦DJ",
-            "type": 3,
-            "jar": "./xyqxbpq新.jar",
-            "api": "csp_XBPQ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./DJ呦呦.json"
-        },    {
             "key": "csp_Biliyy",
             "name": "🅱️哔哩┃音乐",
             "type": 3,
