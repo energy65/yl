@@ -27,48 +27,6 @@
                 "ratio": 1.597
             }
         },
-          {
-      "name": "弹幕",
-      "key": "弹幕",
-      "type": 3,
-      "api": "csp_SecureDanmu",
-      "jar": "https://fastlink.cokey.xyz/f/N79LH4/danmu-spider-native.jar",
-      "searchable": 1,
-      "filterable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": {
-        "apiUrls": [
-          "https://dm.abai.ccwu.cc/abai|LogVar",
-          "https://danmu.lily.lat/lilyemby",
-          "https://danmu.longemby.com/lilyemby",
-          "https://logvarrn.278612356.xyz/steven",
-          "https://logvardm.278612356.xyz/steven",
-          "https://dm.wodenas.xin/xiatianemby",
-          "https://danmu.wangziyang.top/020116",
-          "https://justdanmu.irisnb.com/iris-danmu",
-          "https://dmfl.us.ci/87654321",
-          "https://dm.660505.xyz:8443/a123456",
-          "https://dandan.wenjian.de/wenjian",
-          "https://dm.9090x.eu.org/xiaobai",
-          "https://danmu.0000996.xyz/87654321",
-          "https://dm.199333.xyz/dm",
-          "https://danmu.qianting168.com/456765847636987622146901",
-          "https://dmapi.6565n.xyz/87654321",
-          "https://dm.626258.xyz/87654321",
-          "https://logo.saodu.work:8888/87654321",
-          "http://ecs.dysobo.cn:9321/87654321",
-          "https://danmu.bona1984.com:99/87654321",
-          "https://www.zhinianruying.cc.cd/87654321",
-          "https://88920.dpdns.org/87654321",
-          "https://Dm.lJiaoVm.com/luosen",
-          "https://logvar-danmu.rinrin.top/87654321",
-          "https://logvar-rinrin.netlify.app/r1NYa9i",
-          "https://logdanmu.kongcheng666.dpdns.org/a123456",
-          "https://danmu.iyo.us.ci/theft-dastardly-prognosis-hula-agenda2-dropkick"
-        ]
-      }
-    },
 				{
             "key": "csp_Jianpian",
             "name": "👌🏻荐片┃影视",
@@ -905,9 +863,9 @@
             "type": 3
         },
 		      {
-            "key": "azz音乐网",
-            "name": "🎶azz|音乐",
-            "api": "./azz音乐网.py",
+            "key": "hige音乐网",
+            "name": "🎶hige|音乐",
+            "api": "./hige.py",
             "filterable": 1,
             "timeout": 60,
             "quickSearch": 1,
