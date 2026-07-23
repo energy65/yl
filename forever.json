@@ -128,6 +128,15 @@
           "searchable": 1,
           "type": 3
         },
+		                                        {
+          "key": "茶杯狐PY",
+          "name": "👌茶杯狐丨PY",
+          "api": "./茶杯狐.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
         {
             "key": "柠檬",
             "name": "👌柠檬|[1080p影视]",
