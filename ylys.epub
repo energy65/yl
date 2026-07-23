@@ -110,6 +110,24 @@
           "searchable": 1,
           "type": 3
         },
+				        {
+          "key": "奇奇影视PY",
+          "name": "👌奇奇影视丨[1080p影视]",
+          "api": "./奇奇影视.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
+					        {
+          "key": "金牌影视PY",
+          "name": "👌金牌影视丨[1080p影视]",
+          "api": "./金牌影视.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
         {
             "key": "柠檬",
             "name": "👌柠檬|[1080p影视]",
