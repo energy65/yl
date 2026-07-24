@@ -137,6 +137,24 @@
           "searchable": 1,
           "type": 3
         },
+			                                                {
+          "key": "简云PY",
+          "name": "👌简云丨[1080p影视]",
+          "api": "./简云.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
+                                                        {
+          "key": "小蜜蜂PY",
+          "name": "👌小蜜蜂丨[1080p影视]",
+          "api": "./小蜜蜂.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
         {
             "key": "柠檬",
             "name": "👌柠檬|[1080p影视]",

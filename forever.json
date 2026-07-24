@@ -130,8 +130,26 @@
         },
 		                                        {
           "key": "茶杯狐PY",
-          "name": "👌茶杯狐丨PY",
+          "name": "👌茶杯狐丨[1080p影视]",
           "api": "./茶杯狐.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
+		                                                {
+          "key": "简云PY",
+          "name": "👌简云丨[1080p影视]",
+          "api": "./简云.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
+                                                        {
+          "key": "小蜜蜂PY",
+          "name": "👌小蜜蜂丨[1080p影视]",
+          "api": "./小蜜蜂.py",
           "filterable": 1,
           "quickSearch": 1,
           "searchable": 1,
