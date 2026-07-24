@@ -1088,7 +1088,7 @@
             "key": "戏曲大全",
             "name": "🎭戏曲┃大全[戏曲]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+            "api": "./drpy2.min.js",
             "ext": "./戏曲大全.js"
         },
         {
