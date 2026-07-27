@@ -74,13 +74,13 @@
             "api": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/drpy2.min.js",
             "ext": "https://gh-proxy.org/https://raw.githubusercontent.com/energy65/yl/refs/heads/main/闪雷.js"
         },
-        #{
-        #    "key": "瓜子js",
-        #    "name": "👌瓜子|影视",
-        #    "type": 3,
-        #    "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
-        #    "ext": "./瓜子.js"
-        #},
+        {
+            "key": "瓜子js",
+            "name": "👌瓜子|影视",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+            "ext": "./瓜子.js"
+        },
 	    {
           "key": "永乐JS",
           "name": "👌永乐丨[1080p影视]",
