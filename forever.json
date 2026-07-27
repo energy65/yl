@@ -59,6 +59,15 @@
       "type": 3,
       "api": "csp_Gz360"
     }, 
+	         {
+          "key": "爱影视 PY",
+          "name": "爱影视丨[1080p影视]",
+          "api": "./爱影视.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
 		        {
             "key": "奇乐影视",
             "name": "👌奇乐影视|[1080p影视]",
