@@ -273,7 +273,16 @@
            "quickSearch": 1,
            "filterable": 1,
            "genre": "shortdrama"
-        },       
+        }, 
+   {
+            "key": "🔴果PY",
+            "name": "👌🔴果丨PY",
+            "api": "./hongguo.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        },		
 		# {
        #    "key": "csp_Panta91",
        #    "name": "👀盘Ta┃YD",
