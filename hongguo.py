@@ -27,7 +27,9 @@ class Spider(BaseSpider):
     UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 
     # 微信公众号加密数据（完整版本）
-    _w_full_data = [141, 209, 192, 131, 216, 212, 138, 218, 219, 129, 223, 255, 132, 251, 232, 16, 214, 136, 166, 141, 229, 245, 143, 218, 218, 139, 228, 193, 131, 210, 239, 67, 155, 227, 190, 65, 213, 136, 204, 94, 94, 82, 83, 64, 86, 109, 70, 80, 81, 140, 221, 192, 182, 168, 191, 212, 173, 220, 138, 202, 253, 131, 201, 247, 183, 195, 205, 139, 221, 229, 146, 229, 162, 213, 130, 139, 141, 243, 198, 129, 221, 229, 138, 213, 236, 131, 238, 248, 137, 193, 255, 213, 185, 186]
+    _w_full_data = [141, 209, 192, 131, 216, 212, 138, 218, 219, 129, 223, 255, 132, 251, 232, 16, 214, 136, 166, 141, 229, 245, 143, 218, 218, 139, 228, 193, 131, 210, 239, 67, 155, 227, 190, 65, 213, 136, 204, 94, 94, 82, 83, 64, 86, 109, 70, 80, 81, 140, 221, 192, 182, 168, 191, 212, 173, 220, 138, 202, 253, 131, 201, 247, 183, 195, 205, 139, 221, 229, 146, 229, 162, 213, 130, 139, 141, 243, 198, 129, 221, 229, 138, 213, 236, 128, 222, 217, 137, 211, 217]
+    # 线路文本加密数据
+    _w_line_data = [142, 213, 254, 130, 237, 238, 135, 226, 216, 129, 216, 222, 135, 197, 216, 18, 65, 213, 136, 204, 94, 94, 82, 83, 64, 86, 109, 70, 80, 81, 72, 135, 206, 207, 215, 186, 169, 211, 213, 222, 134, 192, 225]
     _w_key = b"hongguo_wechat_2026"
 
     # 分类配置
@@ -75,10 +77,43 @@ class Spider(BaseSpider):
 
     def _get_wechat_info(self):
         try:
-            plain = bytes([b ^ self._w_key[i % len(self._w_key)] for i, b in enumerate(self._w_full_data)])
+            # XOR decrypt
+            key = self._w_key
+            data = self._w_full_data
+            plain = bytearray(len(data))
+            for i in range(len(data)):
+                plain[i] = data[i] ^ key[i % len(key)]
+            return plain.decode('utf-8')
+        except Exception as e:
+            # Fallback: try alternative method
+            try:
+                key = self._w_key
+                data = self._w_full_data
+                result = []
+                for i in range(len(data)):
+                    result.append(chr(data[i] ^ key[i % len(key)]))
+                return ''.join(result)
+            except Exception:
+                return ''
+
+    def _get_line_info(self):
+        try:
+            key = self._w_key
+            data = self._w_line_data
+            plain = bytearray(len(data))
+            for i in range(len(data)):
+                plain[i] = data[i] ^ key[i % len(key)]
             return plain.decode('utf-8')
         except Exception:
-            return ''
+            try:
+                key = self._w_key
+                data = self._w_line_data
+                result = []
+                for i in range(len(data)):
+                    result.append(chr(data[i] ^ key[i % len(key)]))
+                return ''.join(result)
+            except Exception:
+                return '红果短剧'
 
     def getHtml(self, url):
         try:
@@ -139,10 +174,14 @@ class Spider(BaseSpider):
             tags = item.get('tags', [])
             episode_cnt = item.get('episode_cnt', 0)
             episode_right_text = item.get('episode_right_text', '')
-            vid_list = item.get('vid_list', [])
 
             # Build remarks
             remarks = episode_right_text if episode_right_text else f"共{episode_cnt}集"
+
+            # Add WeChat info to description
+            wechat_info = self._get_wechat_info()
+            if wechat_info:
+                intro = (intro + '\n\n' + wechat_info) if intro else wechat_info
 
             return {
                 "vod_id": series_id,
@@ -151,7 +190,6 @@ class Spider(BaseSpider):
                 "vod_remarks": remarks,
                 "vod_content": intro,
                 "vod_class": ', '.join(tags[:3]) if tags else '',
-                "_vid_list": vid_list,
             }
         except Exception:
             return None
@@ -285,6 +323,9 @@ class Spider(BaseSpider):
         wechat_info = self._get_wechat_info()
         desc = series_intro + '\n\n' + wechat_info
 
+        # Get line info
+        line_info = self._get_line_info()
+
         vod = {
             "vod_id": series_id,
             "vod_name": series_name,
@@ -297,7 +338,7 @@ class Spider(BaseSpider):
             "vod_content": desc,
             "vod_class": ', '.join(tags[:3]) if tags else '',
             "type_name": ', '.join(tags[:3]) if tags else '',
-            "vod_play_from": "红果短剧",
+            "vod_play_from": line_info,
             "vod_play_url": '#'.join(play_groups),
         }
 
