@@ -173,22 +173,42 @@
             "jar": "./柠檬.jar",
             "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"
         },
-		  {
-            "name": "👌橘汁|[4k影视]",
-            "key": "Juzhi",
-            "type": 3,
-            "jar": "./Juzhi_spider.jar",
-            "api": "csp_Juzhi",
-            "searchable": 1,
-            "filterable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "ext": {
-              "host": "",
-              "site": "./az5.txt",
-              "version": "3.0.1.9"
-            }
-        },
+		# {
+        #   "name": "👌橘汁|[4k影视]",
+        #   "key": "Juzhi",
+        #   "type": 3,
+        #   "jar": "./Juzhi_spider.jar",
+        #   "api": "csp_Juzhi",
+        #   "searchable": 1,
+        #   "filterable": 1,
+        #   "quickSearch": 1,
+        #   "changeable": 1,
+        #   "ext": {
+        #     "host": "",
+        #     "site": "./az5.txt",
+        #     "version": "3.0.1.9"
+        #   }
+        #,
+			 {
+      "key": "橘子2",
+      "name": "橘汁|影视[1080P]",
+      "type": 3,
+      "api": "csp_AppDrama",
+            "jar": "./橘子.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "appName": "橘汁",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
+        "dataKey": "DGVQRUX5R1LWWDLHTGJSUKG1DJRVPQ==",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "pkg": "com.lxf.snzlcgtzxyx",
+        "host": "",
+        "site": "./app.txt",
+        "version": "3.0.2.1",
+        "decrypt": "1"
+      },
 		        {
           "key": "枫叶影院PY",
           "name": "枫叶影院丨[4k影视]",
