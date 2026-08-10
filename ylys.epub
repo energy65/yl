@@ -110,6 +110,15 @@
           "searchable": 1,
           "type": 3
         },
+			    {
+          "key": "pianku_py",
+          "name": "👌片库丨[1080p影视]",
+          "api": "./片库TV.py",
+          "filterable": 1,
+          "quickSearch": 1,
+          "searchable": 1,
+          "type": 3
+        },
 	        {
           "key": "兄弟PY",
           "name": "👌兄弟丨[1080p影视]",
