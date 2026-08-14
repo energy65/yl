@@ -61,7 +61,7 @@
     }, 
 	         {
           "key": "爱影视 PY",
-          "name": "爱影视丨[1080p影视]",
+          "name": "👌爱影视丨[1080p影视]",
           "api": "./爱影视.py",
           "filterable": 1,
           "quickSearch": 1,
@@ -121,7 +121,7 @@
         },
 		        {
             "key": "影视天堂 PY",
-            "name": "影视天堂丨PY",
+            "name": "👌影视天堂丨PY",
             "api": "./影视天堂.py",
             "filterable": 1,
             "quickSearch": 1,
@@ -734,7 +734,7 @@
     },
 	        {
       "key": "采集聚合追剧py",
-      "name": "采集聚合追剧|[1080p cms]",
+      "name": "🔥采集聚合追剧|[1080p cms]",
       "type": 3,
       "api": "./采集聚合追剧.py",
       "searchable": 1,
