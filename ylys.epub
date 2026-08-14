@@ -166,7 +166,7 @@
         },
                  {
             "key": "影视天堂 PY",
-            "name": "影视天堂丨[1080p影视]",
+            "name": "👌影视天堂丨[1080p影视]",
             "api": "./影视天堂.py",
             "filterable": 1,
             "quickSearch": 1,
@@ -193,7 +193,7 @@
         },
 					 {
       "key": "橘子2",
-      "name": "橘汁|影视[1080P]",
+      "name": "👌橘汁|影视[1080P]",
       "type": 3,
       "api": "csp_AppDrama",
             "jar": "./橘子.jar",
@@ -214,7 +214,7 @@
 	  },
 		        {
           "key": "枫叶影院PY",
-          "name": "枫叶影院丨[4k影视]",
+          "name": "👀枫叶影院丨[4k影视]",
           "api": "./枫叶影院.py",
           "filterable": 1,
           "quickSearch": 1,
