@@ -175,8 +175,8 @@
         },
 		{
             "key": "巴不得看看PY",
-            "name": "👌巴不得看看P丨PY",
-            "api": "./巴不得看看P.py",
+            "name": "👌巴不得看看丨PY",
+            "api": "./巴不得看看.py",
             "filterable": 1,
             "quickSearch": 1,
             "searchable": 1,
