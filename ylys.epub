@@ -164,15 +164,24 @@
           "searchable": 1,
           "type": 3
         },
-                                                        {
-          "key": "小蜜蜂PY",
-          "name": "👌小蜜蜂丨[1080p影视]",
-          "api": "./小蜜蜂.py",
-          "filterable": 1,
-          "quickSearch": 1,
-          "searchable": 1,
-          "type": 3
+                 {
+            "key": "影视天堂 PY",
+            "name": "影视天堂丨PY",
+            "api": "./影视天堂.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
         },
+		{
+            "key": "巴不得看看PY",
+            "name": "👌巴不得看看P丨PY",
+            "api": "./巴不得看看P.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        }, 
         {
             "key": "柠檬",
             "name": "👌柠檬|[1080p影视]",
