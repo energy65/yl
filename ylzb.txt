@@ -54,7 +54,7 @@ CGTN,http://47.119.24.76:59093/609017205
 武术世界,http://47.119.24.76:59093/958475359
 快乐垂钓,http://47.119.24.76:59093/961930263
 
-极速cctv
+极速cctv,#genre#
 CCTV-1HD,http://192.151.150.154/live/cctv1hd.m3u8
 CCTV-2HD,http://192.151.150.154/live/cctv2hd.m3u8
 CCTV-3HD,http://192.151.150.154/live/cctv3hd.m3u8
