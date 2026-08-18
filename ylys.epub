@@ -1402,28 +1402,6 @@
             "logo": "https://epg.112114.eu.org/logo/{name}.png"
         },
         {
-            "name": "🔯develop202",
-            "type": 0,
-            "url": "https://gh.llkk.cc/http://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-            "playerType": 2,
-            "epg": "http://diyp5.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "港台",
-            "type": 0,
-            "url": "http://ke.hongdus.com/i/46363.txt",
-            "playerType": 2,
-            "timeout": 10
-        },
-        {
-            "name": "🔥金曲欣赏",
-            "type": 0,
-            "url": "https://gitee.com/hu-congrong/hao/raw/master/g.txt",
-            "playerType": 2,
-            "timeout": 10
-        },
-        {
             "name": "☀轮播直播",
             "type": 0,
             "url": "http://hucongrong.tttttttttt.top/dsj.txt",
@@ -1477,24 +1455,6 @@
             "timeout": 10
         },
         {
-            "name": "💖直播",
-            "type": 0,
-            "url": "http://rihou.cc:555/gggg.nzk",
-            "playerType": 2,
-            "ua": "okhttp/3",
-            "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-            "logo": "https://epg.112114.eu.org/logo/{name}.png"
-        },
-        {
-            "name": "💖冰茶②",
-            "type": 0,
-            "url": "https://bc.188766.xyz/?ip=&mima=bingcha1130",
-            "playerType": 2,
-            "ua": "okhttp/3",
-            "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-            "logo": "https://epg.112114.eu.org/logo/{name}.png"
-        },
-        {
             "name": "💖天微③",
             "type": 0,
             "url": "https://d.kstore.dev/download/6651/kjtwzb.txt",
@@ -1502,72 +1462,6 @@
             "ua": "okhttp/3",
             "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
             "logo": "https://epg.112114.eu.org/logo/{name}.png"
-        },
-        {
-            "name": "💖AI线④",
-            "type": 0,
-            "url": "./lib/result.m3u",
-            "epg": "http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
-            "playerType": 2,
-            "timeout": 10
-        },
-        {
-            "name": "💖线路⑤",
-            "type": 0,
-            "url": "./lib/interface.txt",
-            "playerType": 2,
-            "ua": "okhttp/3",
-            "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-            "logo": "https://epg.112114.eu.org/logo/{name}.png"
-        },
-        {
-            "name": "Yoursmile",
-            "type": 0,
-            "url": "./lib/live.txt",
-            "playerType": 1,
-            "ua": "okhttp/3.15",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "feiyang.allinone",
-            "type": 0,
-            "url": "http://127.0.0.1:35457/tv.m3u",
-            "ua": "okhttp/3.15",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "feiyang.bililive",
-            "type": 0,
-            "url": "http://127.0.0.1:35457/bililive.m3u",
-            "ua": "okhttp/3.15",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "feiyang.huyayqk",
-            "type": 0,
-            "url": "http://127.0.0.1:35457/huyayqk.m3u",
-            "ua": "okhttp/3.15",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "feiyang.douyuyqk",
-            "type": 0,
-            "url": "http://127.0.0.1:35457/douyuyqk.m3u",
-            "ua": "okhttp/3.15",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "feiyang.yylunbo",
-            "type": 0,
-            "url": "http://127.0.0.1:35457/yylunbo.m3u",
-            "ua": "okhttp/3.15",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
         }
     ]
 }
